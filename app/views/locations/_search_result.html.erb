@@ -1,0 +1,41 @@
+<table class="table">
+  <tr>
+    <th>Address</th>
+    <th>Latitude</th>
+    <th>Longitude</th>
+    <th>Zip</th>
+  </tr>
+
+  <% @locations.each do |location| %>
+      <tr>
+        <td> <%= location.address %></td>
+        <td> <%= location.lat %></td>
+        <td> <%= location.lng %></td>
+        <td> <%= location.zip_code %></td>
+        <td><%= link_to 'Edit', edit_location_path(location) %></td>
+        <td><%= link_to 'Destroy', location, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+      </tr>
+  <% end %>
+</table>
+
+
+
+
+
+<% if false %>
+
+<% if @geo.success %>
+    <p>Street name : <%= @geo.street_name %> </p>
+    <p>Street address : <%= @geo.street_address %> </p>
+    <p>City : <%= @geo.city %> </p>
+    <p>Latitude : <%= @geo.lat %> </p>
+    <p>Longitude : <%= @geo.lng %> </p>
+    <p>Country : <%= @geo.country %> </p>
+    <p>Zip : <%= @geo.zip %> </p>
+    <p>Success: <%= @geo.success %></p>
+<% else %>
+    <h5> Not found !</h5>
+<% end %>
+<% end %>
+
+

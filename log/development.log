@@ -49201,3 +49201,206 @@ HINT:  No function matches the given name and argument types. You might need to 
   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-25 14:18:34 +0700
+Processing by LocationsController#index as HTML
+Geokit is using the domain: localhost
+  [1m[36mLocation Load (9.0ms)[0m  [1mSELECT "locations".* FROM "locations" [0m
+  Rendered locations/index.html.erb within layouts/application (25.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (5.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (44.0ms)
+Completed 200 OK in 446ms (Views: 388.0ms | ActiveRecord: 51.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-25 14:18:35 +0700
+Served asset /application.css - 304 Not Modified (29ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-08-25 14:18:35 +0700
+Served asset /static_pages.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2013-08-25 14:18:35 +0700
+Served asset /locations.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-08-25 14:18:35 +0700
+Served asset /custom.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-08-25 14:18:35 +0700
+Served asset /sessions.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-08-25 14:18:35 +0700
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/staticpages.css?body=1" for 127.0.0.1 at 2013-08-25 14:18:35 +0700
+Served asset /staticpages.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-25 14:18:35 +0700
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-25 14:18:35 +0700
+Served asset /jquery.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-25 14:18:35 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-08-25 14:18:35 +0700
+Served asset /bootstrap-transition.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-08-25 14:18:36 +0700
+Served asset /bootstrap-affix.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-08-25 14:18:36 +0700
+Served asset /bootstrap-alert.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-08-25 14:18:36 +0700
+Served asset /bootstrap-button.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-08-25 14:18:36 +0700
+Served asset /bootstrap-carousel.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-08-25 14:18:36 +0700
+Served asset /bootstrap-dropdown.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-08-25 14:18:36 +0700
+Served asset /bootstrap-collapse.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-08-25 14:18:36 +0700
+Served asset /bootstrap-modal.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-08-25 14:18:36 +0700
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-08-25 14:18:36 +0700
+Served asset /bootstrap-tab.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-08-25 14:18:36 +0700
+Served asset /bootstrap-tooltip.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-08-25 14:18:36 +0700
+Served asset /bootstrap-popover.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-08-25 14:18:36 +0700
+Served asset /bootstrap-typeahead.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-08-25 14:18:36 +0700
+Served asset /bootstrap.js - 304 Not Modified (28ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2013-08-25 14:18:36 +0700
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-08-25 14:18:36 +0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-08-25 14:18:36 +0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/staticpages.js?body=1" for 127.0.0.1 at 2013-08-25 14:18:36 +0700
+Served asset /staticpages.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-25 14:18:36 +0700
+Served asset /users.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-25 14:18:37 +0700
+Served asset /application.js - 304 Not Modified (46ms)
+
+
+Started GET "/find_by_zipcode?zip=94105&distance=10" for 127.0.0.1 at 2013-08-25 14:18:45 +0700
+Processing by LocationsController#find_by_zipcode as */*
+  Parameters: {"zip"=>"94105", "distance"=>"10"}
+Geokit is using the domain: localhost
+Google geocoding. Address: 94105. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 94105
+Geocoder.us geocoding. Address: 94105. Result: 37.789228, -122.3957, San Francisco, CA, 94105
+  [1m[36mLocation Load (134.0ms)[0m  [1mSELECT "locations".*, 
+ (ACOS(least(1,COS(0.6595464503868318)*COS(-2.1362079552832234)*COS(RADIANS(locations.lat))*COS(RADIANS(locations.lng))+
+ COS(0.6595464503868318)*SIN(-2.1362079552832234)*COS(RADIANS(locations.lat))*SIN(RADIANS(locations.lng))+
+ SIN(0.6595464503868318)*SIN(RADIANS(locations.lat))))*6376.77271)
+ AS distance FROM "locations" WHERE ((locations.lat>37.744302626210825 AND locations.lat<37.83415337378919 AND locations.lng>-122.45254810916201 AND locations.lng<-122.33885189083796)) AND ((
+ (ACOS(least(1,COS(0.6595464503868318)*COS(-2.1362079552832234)*COS(RADIANS(locations.lat))*COS(RADIANS(locations.lng))+
+ COS(0.6595464503868318)*SIN(-2.1362079552832234)*COS(RADIANS(locations.lat))*SIN(RADIANS(locations.lng))+
+ SIN(0.6595464503868318)*SIN(RADIANS(locations.lat))))*6376.77271)
+ <= 5))[0m
+PG::UndefinedFunction: ERROR:  function radians(character varying) does not exist
+LINE 2: ...(0.6595464503868318)*COS(-2.1362079552832234)*COS(RADIANS(lo...
+                                                             ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+: SELECT "locations".*, 
+          (ACOS(least(1,COS(0.6595464503868318)*COS(-2.1362079552832234)*COS(RADIANS(locations.lat))*COS(RADIANS(locations.lng))+
+          COS(0.6595464503868318)*SIN(-2.1362079552832234)*COS(RADIANS(locations.lat))*SIN(RADIANS(locations.lng))+
+          SIN(0.6595464503868318)*SIN(RADIANS(locations.lat))))*6376.77271)
+          AS distance FROM "locations"  WHERE ((locations.lat>37.744302626210825 AND locations.lat<37.83415337378919 AND locations.lng>-122.45254810916201 AND locations.lng<-122.33885189083796)) AND ((
+          (ACOS(least(1,COS(0.6595464503868318)*COS(-2.1362079552832234)*COS(RADIANS(locations.lat))*COS(RADIANS(locations.lng))+
+          COS(0.6595464503868318)*SIN(-2.1362079552832234)*COS(RADIANS(locations.lat))*SIN(RADIANS(locations.lng))+
+          SIN(0.6595464503868318)*SIN(RADIANS(locations.lat))))*6376.77271)
+          <= 5))
+  Rendered locations/_search_result.html.erb (183.0ms)
+  Rendered locations/find_by_zipcode.js.erb (204.0ms)
+Completed 500 Internal Server Error in 1033ms
+
+ActionView::Template::Error (PG::UndefinedFunction: ERROR:  function radians(character varying) does not exist
+LINE 2: ...(0.6595464503868318)*COS(-2.1362079552832234)*COS(RADIANS(lo...
+                                                             ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+: SELECT "locations".*, 
+          (ACOS(least(1,COS(0.6595464503868318)*COS(-2.1362079552832234)*COS(RADIANS(locations.lat))*COS(RADIANS(locations.lng))+
+          COS(0.6595464503868318)*SIN(-2.1362079552832234)*COS(RADIANS(locations.lat))*SIN(RADIANS(locations.lng))+
+          SIN(0.6595464503868318)*SIN(RADIANS(locations.lat))))*6376.77271)
+          AS distance FROM "locations"  WHERE ((locations.lat>37.744302626210825 AND locations.lat<37.83415337378919 AND locations.lng>-122.45254810916201 AND locations.lng<-122.33885189083796)) AND ((
+          (ACOS(least(1,COS(0.6595464503868318)*COS(-2.1362079552832234)*COS(RADIANS(locations.lat))*COS(RADIANS(locations.lng))+
+          COS(0.6595464503868318)*SIN(-2.1362079552832234)*COS(RADIANS(locations.lat))*SIN(RADIANS(locations.lng))+
+          SIN(0.6595464503868318)*SIN(RADIANS(locations.lat))))*6376.77271)
+          <= 5))):
+    6:     <th>Zip</th>
+    7:   </tr>
+    8: 
+    9:   <% @locations.each do |location| %>
+    10:       <tr>
+    11:         <td> <%= location.address %></td>
+    12:         <td> <%= location.lat %></td>
+  app/views/locations/_search_result.html.erb:9:in `_app_views_locations__search_result_html_erb__815108045_41417028'
+  app/views/locations/find_by_zipcode.js.erb:1:in `_app_views_locations_find_by_zipcode_js_erb__601638375_41287824'
+  app/controllers/locations_controller.rb:26:in `find_by_zipcode'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (66.0ms)

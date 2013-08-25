@@ -28,9 +28,9 @@
       </library>
     </libraries>
   </data-source>
-  <data-source source="LOCAL" name="Rails TryAgain: development" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="262a7553-96a4-4ffb-aa04-acf577c0903d">
+  <data-source source="LOCAL" name="Rails TryAgain: development" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="5503ca71-06e0-409d-90ea-ad7676cceac0">
     <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-    <jdbc-url>jdbc:mysql://127.0.0.1:5432/TryAgain_development</jdbc-url>
+    <jdbc-url>jdbc:mysql://127.0.0.1/TryAgain_development</jdbc-url>
     <user-name>root</user-name>
     <user-password>dfe2dfdedfc6dfdfdfeadfc4df98df9cdf9adf9f</user-password>
     <libraries>

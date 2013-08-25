@@ -49437,3 +49437,1849 @@ Migrating to AddSomeIndor (20130824110223)
   [1m[36m (49.1ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130824110223')[0m
   [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
 Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-25 21:35:25 +0700
+Processing by LocationsController#index as HTML
+Geokit is using the domain: localhost
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT `locations`.* FROM `locations` [0m
+  Rendered locations/index.html.erb within layouts/application (3.8ms)
+Compiled custom.css  (1527ms)  (pid 4033)
+Compiled application.css  (1ms)  (pid 4033)
+Compiled jquery.js  (3ms)  (pid 4033)
+Compiled jquery_ujs.js  (0ms)  (pid 4033)
+Compiled bootstrap-transition.js  (0ms)  (pid 4033)
+Compiled bootstrap-affix.js  (0ms)  (pid 4033)
+Compiled bootstrap-alert.js  (0ms)  (pid 4033)
+Compiled bootstrap-button.js  (0ms)  (pid 4033)
+Compiled bootstrap-carousel.js  (0ms)  (pid 4033)
+Compiled bootstrap-collapse.js  (0ms)  (pid 4033)
+Compiled bootstrap-dropdown.js  (0ms)  (pid 4033)
+Compiled bootstrap-modal.js  (0ms)  (pid 4033)
+Compiled bootstrap-scrollspy.js  (0ms)  (pid 4033)
+Compiled bootstrap-tab.js  (0ms)  (pid 4033)
+Compiled bootstrap-tooltip.js  (0ms)  (pid 4033)
+Compiled bootstrap-popover.js  (0ms)  (pid 4033)
+Compiled bootstrap-typeahead.js  (0ms)  (pid 4033)
+Compiled bootstrap.js  (234ms)  (pid 4033)
+Compiled application.js  (323ms)  (pid 4033)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`remember_token` IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (47.3ms)
+Completed 200 OK in 2250ms (Views: 2225.3ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-25 21:35:28 +0700
+Served asset /application.css - 200 OK (61ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-08-25 21:35:28 +0700
+Served asset /custom.css - 200 OK (11ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2013-08-25 21:35:28 +0700
+Served asset /locations.css - 200 OK (10ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-08-25 21:35:28 +0700
+Served asset /sessions.css - 200 OK (4ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-08-25 21:35:28 +0700
+Served asset /static_pages.css - 200 OK (6ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-08-25 21:35:28 +0700
+Served asset /scaffolds.css - 200 OK (8ms)
+
+
+Started GET "/assets/staticpages.css?body=1" for 127.0.0.1 at 2013-08-25 21:35:28 +0700
+Served asset /staticpages.css - 200 OK (3ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-25 21:35:28 +0700
+Served asset /users.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-25 21:35:28 +0700
+Served asset /jquery.js - 200 OK (11ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-25 21:35:28 +0700
+Served asset /jquery_ujs.js - 200 OK (3ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-08-25 21:35:28 +0700
+Served asset /bootstrap-transition.js - 200 OK (2ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-08-25 21:35:28 +0700
+Served asset /bootstrap-affix.js - 200 OK (2ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-08-25 21:35:28 +0700
+Served asset /bootstrap-alert.js - 200 OK (2ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-08-25 21:35:28 +0700
+Served asset /bootstrap-button.js - 200 OK (3ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-08-25 21:35:28 +0700
+Served asset /bootstrap-carousel.js - 200 OK (5ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-08-25 21:35:28 +0700
+Served asset /bootstrap-collapse.js - 200 OK (12ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-08-25 21:35:28 +0700
+Served asset /bootstrap-dropdown.js - 200 OK (33ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-08-25 21:35:28 +0700
+Served asset /bootstrap-modal.js - 200 OK (2ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-08-25 21:35:28 +0700
+Served asset /bootstrap-scrollspy.js - 200 OK (2ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-08-25 21:35:28 +0700
+Served asset /bootstrap-tab.js - 200 OK (2ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-08-25 21:35:28 +0700
+Served asset /bootstrap-tooltip.js - 200 OK (2ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-08-25 21:35:28 +0700
+Served asset /bootstrap-popover.js - 200 OK (4ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-08-25 21:35:28 +0700
+Served asset /bootstrap-typeahead.js - 200 OK (3ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-08-25 21:35:28 +0700
+Served asset /bootstrap.js - 200 OK (20ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2013-08-25 21:35:28 +0700
+Served asset /locations.js - 200 OK (3ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-08-25 21:35:28 +0700
+Served asset /sessions.js - 200 OK (2ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-08-25 21:35:28 +0700
+Served asset /static_pages.js - 200 OK (2ms)
+
+
+Started GET "/assets/staticpages.js?body=1" for 127.0.0.1 at 2013-08-25 21:35:28 +0700
+Served asset /staticpages.js - 200 OK (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-25 21:35:28 +0700
+Served asset /users.js - 200 OK (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-25 21:35:28 +0700
+Served asset /application.js - 200 OK (58ms)
+
+
+Started GET "/locations/new" for 127.0.0.1 at 2013-08-25 21:35:47 +0700
+Processing by LocationsController#new as HTML
+Geokit is using the domain: localhost
+  Rendered locations/_form.html.erb (51.2ms)
+  Rendered locations/new.html.erb within layouts/application (55.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`remember_token` IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.5ms)
+Completed 200 OK in 141ms (Views: 129.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/locations" for 127.0.0.1 at 2013-08-25 21:35:51 +0700
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zkbB4X73O0FCpltaQJ94MRxva1VmqxYN5BWqhOSGxfo=", "location"=>{"address"=>"100 Spear St, San Francisco, CA", "zip_code"=>""}, "commit"=>"Create Location"}
+Geokit is using the domain: localhost
+  [1m[35m (0.1ms)[0m  BEGIN
+Google geocoding. Address: 100 Spear St, San Francisco, CA. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 100 Spear St, San Francisco, CA
+Geocoder.us geocoding. Address: 100 Spear St, San Francisco, CA. Result: 37.792528,-122.393981,100 Spear St,San Francisco,CA,94105
+
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `locations` (`address`, `created_at`, `lat`, `lng`, `updated_at`, `zip_code`) VALUES ('100 Spear St, San Francisco, CA', '2013-08-25 14:35:52', 37.792528, -122.393981, '2013-08-25 14:35:52', '94105')[0m
+  [1m[35m (192.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/locations/1
+Completed 302 Found in 1182ms (ActiveRecord: 192.8ms)
+
+
+Started GET "/locations/1" for 127.0.0.1 at 2013-08-25 21:35:52 +0700
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: localhost
+  [1m[36mLocation Load (0.4ms)[0m  [1mSELECT `locations`.* FROM `locations` WHERE `locations`.`id` = 1 LIMIT 1[0m
+  Rendered locations/show.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`remember_token` IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (2.4ms)
+Completed 200 OK in 115ms (Views: 111.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2013-08-25 21:35:53 +0700
+Processing by LocationsController#index as HTML
+Geokit is using the domain: localhost
+  [1m[36mLocation Load (0.3ms)[0m  [1mSELECT `locations`.* FROM `locations` [0m
+  Rendered locations/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`remember_token` IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (2.2ms)
+Completed 200 OK in 112ms (Views: 109.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/locations/new" for 127.0.0.1 at 2013-08-25 21:35:59 +0700
+Processing by LocationsController#new as HTML
+Geokit is using the domain: localhost
+  Rendered locations/_form.html.erb (1.9ms)
+  Rendered locations/new.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`remember_token` IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.2ms)
+Completed 200 OK in 123ms (Views: 122.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/locations" for 127.0.0.1 at 2013-08-25 21:36:00 +0700
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zkbB4X73O0FCpltaQJ94MRxva1VmqxYN5BWqhOSGxfo=", "location"=>{"address"=>"525 Market St, San Francisco, CA", "zip_code"=>""}, "commit"=>"Create Location"}
+Geokit is using the domain: localhost
+  [1m[35m (0.1ms)[0m  BEGIN
+Google geocoding. Address: 525 Market St, San Francisco, CA. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 525 Market St, San Francisco, CA
+Geocoder.us geocoding. Address: 525 Market St, San Francisco, CA. Result: 37.790548,-122.399722,525 Market St,San Francisco,CA,94105
+
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `locations` (`address`, `created_at`, `lat`, `lng`, `updated_at`, `zip_code`) VALUES ('525 Market St, San Francisco, CA', '2013-08-25 14:36:01', 37.790548, -122.399722, '2013-08-25 14:36:01', '94105')[0m
+  [1m[35m (147.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/locations/2
+Completed 302 Found in 697ms (ActiveRecord: 147.8ms)
+
+
+Started GET "/locations/2" for 127.0.0.1 at 2013-08-25 21:36:01 +0700
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"2"}
+Geokit is using the domain: localhost
+  [1m[36mLocation Load (0.3ms)[0m  [1mSELECT `locations`.* FROM `locations` WHERE `locations`.`id` = 2 LIMIT 1[0m
+  Rendered locations/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`remember_token` IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (2.4ms)
+Completed 200 OK in 129ms (Views: 127.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/locations/new" for 127.0.0.1 at 2013-08-25 21:36:02 +0700
+Processing by LocationsController#new as HTML
+Geokit is using the domain: localhost
+  Rendered locations/_form.html.erb (1.1ms)
+  Rendered locations/new.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`remember_token` IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 73ms (Views: 72.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/locations" for 127.0.0.1 at 2013-08-25 21:36:12 +0700
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zkbB4X73O0FCpltaQJ94MRxva1VmqxYN5BWqhOSGxfo=", "location"=>{"address"=>"525 Market St, San Francisco, CA", "zip_code"=>""}, "commit"=>"Create Location"}
+Geokit is using the domain: localhost
+  [1m[35m (0.1ms)[0m  BEGIN
+Google geocoding. Address: 525 Market St, San Francisco, CA. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 525 Market St, San Francisco, CA
+Geocoder.us geocoding. Address: 525 Market St, San Francisco, CA. Result: 37.790548,-122.399722,525 Market St,San Francisco,CA,94105
+
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `locations` (`address`, `created_at`, `lat`, `lng`, `updated_at`, `zip_code`) VALUES ('525 Market St, San Francisco, CA', '2013-08-25 14:36:12', 37.790548, -122.399722, '2013-08-25 14:36:12', '94105')[0m
+  [1m[35m (1341.7ms)[0m  COMMIT
+Redirected to http://localhost:3000/locations/3
+Completed 302 Found in 1869ms (ActiveRecord: 1342.1ms)
+
+
+Started GET "/locations/3" for 127.0.0.1 at 2013-08-25 21:36:14 +0700
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"3"}
+Geokit is using the domain: localhost
+  [1m[36mLocation Load (0.3ms)[0m  [1mSELECT `locations`.* FROM `locations` WHERE `locations`.`id` = 3 LIMIT 1[0m
+  Rendered locations/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`remember_token` IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (2.2ms)
+Completed 200 OK in 104ms (Views: 102.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/locations/new" for 127.0.0.1 at 2013-08-25 21:36:15 +0700
+Processing by LocationsController#new as HTML
+Geokit is using the domain: localhost
+  Rendered locations/_form.html.erb (1.0ms)
+  Rendered locations/new.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`remember_token` IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.2ms)
+Completed 200 OK in 103ms (Views: 101.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/locations" for 127.0.0.1 at 2013-08-25 21:36:20 +0700
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zkbB4X73O0FCpltaQJ94MRxva1VmqxYN5BWqhOSGxfo=", "location"=>{"address"=>"5130 3rd St, San Francisco, CA", "zip_code"=>""}, "commit"=>"Create Location"}
+Geokit is using the domain: localhost
+  [1m[35m (0.1ms)[0m  BEGIN
+Google geocoding. Address: 5130 3rd St, San Francisco, CA. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 5130 3rd St, San Francisco, CA
+Geocoder.us geocoding. Address: 5130 3rd St, San Francisco, CA. Result: 37.731430,-122.391881,5130 3rd St,San Francisco,CA,94124
+
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `locations` (`address`, `created_at`, `lat`, `lng`, `updated_at`, `zip_code`) VALUES ('5130 3rd St, San Francisco, CA', '2013-08-25 14:36:20', 37.73143, -122.391881, '2013-08-25 14:36:20', '94124')[0m
+  [1m[35m (58.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/locations/4
+Completed 302 Found in 594ms (ActiveRecord: 58.8ms)
+
+
+Started GET "/locations/4" for 127.0.0.1 at 2013-08-25 21:36:20 +0700
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"4"}
+Geokit is using the domain: localhost
+  [1m[36mLocation Load (0.3ms)[0m  [1mSELECT `locations`.* FROM `locations` WHERE `locations`.`id` = 4 LIMIT 1[0m
+  Rendered locations/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`remember_token` IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (2.3ms)
+Completed 200 OK in 108ms (Views: 105.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2013-08-25 21:36:22 +0700
+Processing by LocationsController#index as HTML
+Geokit is using the domain: localhost
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT `locations`.* FROM `locations` [0m
+  Rendered locations/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`remember_token` IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (2.2ms)
+Completed 200 OK in 89ms (Views: 87.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/locations/new" for 127.0.0.1 at 2013-08-25 21:36:27 +0700
+Processing by LocationsController#new as HTML
+Geokit is using the domain: localhost
+  Rendered locations/_form.html.erb (1.2ms)
+  Rendered locations/new.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`remember_token` IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 79ms (Views: 78.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/locations" for 127.0.0.1 at 2013-08-25 21:36:28 +0700
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zkbB4X73O0FCpltaQJ94MRxva1VmqxYN5BWqhOSGxfo=", "location"=>{"address"=>"4000 Executive Pky San Ramon, CA", "zip_code"=>""}, "commit"=>"Create Location"}
+Geokit is using the domain: localhost
+  [1m[35m (0.2ms)[0m  BEGIN
+Google geocoding. Address: 4000 Executive Pky San Ramon, CA. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 4000 Executive Pky San Ramon, CA
+Geocoder.us geocoding. Address: 4000 Executive Pky San Ramon, CA. Result: 37.767027,-121.968670,4000 Executive Pky,San Ramon,CA,94583
+
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `locations` (`address`, `created_at`, `lat`, `lng`, `updated_at`, `zip_code`) VALUES ('4000 Executive Pky San Ramon, CA', '2013-08-25 14:36:29', 37.767027, -121.96867, '2013-08-25 14:36:29', '94583')[0m
+  [1m[35m (64.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/locations/5
+Completed 302 Found in 576ms (ActiveRecord: 64.9ms)
+
+
+Started GET "/locations/5" for 127.0.0.1 at 2013-08-25 21:36:29 +0700
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"5"}
+Geokit is using the domain: localhost
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT `locations`.* FROM `locations` WHERE `locations`.`id` = 5 LIMIT 1[0m
+  Rendered locations/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`remember_token` IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 92ms (Views: 91.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/locations/new" for 127.0.0.1 at 2013-08-25 21:36:33 +0700
+Processing by LocationsController#new as HTML
+Geokit is using the domain: localhost
+  Rendered locations/_form.html.erb (1.3ms)
+  Rendered locations/new.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`remember_token` IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 65ms (Views: 64.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/locations" for 127.0.0.1 at 2013-08-25 21:36:34 +0700
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zkbB4X73O0FCpltaQJ94MRxva1VmqxYN5BWqhOSGxfo=", "location"=>{"address"=>"2943 Walker Ct, Fernley, NV", "zip_code"=>""}, "commit"=>"Create Location"}
+Geokit is using the domain: localhost
+  [1m[35m (0.1ms)[0m  BEGIN
+Google geocoding. Address: 2943 Walker Ct, Fernley, NV. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 2943 Walker Ct, Fernley, NV
+Geocoder.us geocoding. Address: 2943 Walker Ct, Fernley, NV. Result: 38.822134,-119.062956,138 E Walker Rd,Yerington,NV,89447
+
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `locations` (`address`, `created_at`, `lat`, `lng`, `updated_at`, `zip_code`) VALUES ('2943 Walker Ct, Fernley, NV', '2013-08-25 14:36:35', 38.822134, -119.062956, '2013-08-25 14:36:35', '89447')[0m
+  [1m[35m (66.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/locations/6
+Completed 302 Found in 587ms (ActiveRecord: 66.6ms)
+
+
+Started GET "/locations/6" for 127.0.0.1 at 2013-08-25 21:36:35 +0700
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"6"}
+Geokit is using the domain: localhost
+  [1m[36mLocation Load (0.3ms)[0m  [1mSELECT `locations`.* FROM `locations` WHERE `locations`.`id` = 6 LIMIT 1[0m
+  Rendered locations/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`remember_token` IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (2.3ms)
+Completed 200 OK in 103ms (Views: 101.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2013-08-25 21:36:36 +0700
+Processing by LocationsController#index as HTML
+Geokit is using the domain: localhost
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT `locations`.* FROM `locations` [0m
+  Rendered locations/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`remember_token` IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (2.2ms)
+Completed 200 OK in 119ms (Views: 116.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/find_by_zipcode?zip=94105&distance=10" for 127.0.0.1 at 2013-08-25 21:36:45 +0700
+Processing by LocationsController#find_by_zipcode as */*
+  Parameters: {"zip"=>"94105", "distance"=>"10"}
+Geokit is using the domain: localhost
+Google geocoding. Address: 94105. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 94105
+Geocoder.us geocoding. Address: 94105. Result: 37.789228, -122.3957, San Francisco, CA, 94105
+  [1m[36mLocation Load (0.8ms)[0m  [1mSELECT `locations`.*, 
+ (ACOS(least(1,COS(0.6595464503868318)*COS(-2.1362079552832234)*COS(RADIANS(locations.lat))*COS(RADIANS(locations.lng))+
+ COS(0.6595464503868318)*SIN(-2.1362079552832234)*COS(RADIANS(locations.lat))*SIN(RADIANS(locations.lng))+
+ SIN(0.6595464503868318)*SIN(RADIANS(locations.lat))))*6376.77271)
+ AS distance FROM `locations` WHERE ((locations.lat>37.744302626210825 AND locations.lat<37.83415337378919 AND locations.lng>-122.45254810916201 AND locations.lng<-122.33885189083796)) AND ((
+ (ACOS(least(1,COS(0.6595464503868318)*COS(-2.1362079552832234)*COS(RADIANS(locations.lat))*COS(RADIANS(locations.lng))+
+ COS(0.6595464503868318)*SIN(-2.1362079552832234)*COS(RADIANS(locations.lat))*SIN(RADIANS(locations.lng))+
+ SIN(0.6595464503868318)*SIN(RADIANS(locations.lat))))*6376.77271)
+ <= 5))[0m
+  Rendered locations/_search_result.html.erb (35.1ms)
+  Rendered locations/find_by_zipcode.js.erb (40.4ms)
+Completed 200 OK in 575ms (Views: 52.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/find_by_zipcode?zip=94105&distance=10" for 127.0.0.1 at 2013-08-25 21:37:05 +0700
+Processing by LocationsController#find_by_zipcode as */*
+  Parameters: {"zip"=>"94105", "distance"=>"10"}
+Geokit is using the domain: localhost
+Google geocoding. Address: 94105. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 94105
+Geocoder.us geocoding. Address: 94105. Result: 37.789228, -122.3957, San Francisco, CA, 94105
+  [1m[35mLocation Load (0.4ms)[0m  SELECT `locations`.*, 
+ (ACOS(least(1,COS(0.6595464503868318)*COS(-2.1362079552832234)*COS(RADIANS(locations.lat))*COS(RADIANS(locations.lng))+
+ COS(0.6595464503868318)*SIN(-2.1362079552832234)*COS(RADIANS(locations.lat))*SIN(RADIANS(locations.lng))+
+ SIN(0.6595464503868318)*SIN(RADIANS(locations.lat))))*6376.77271)
+ AS distance FROM `locations` WHERE ((locations.lat>37.744302626210825 AND locations.lat<37.83415337378919 AND locations.lng>-122.45254810916201 AND locations.lng<-122.33885189083796)) AND ((
+ (ACOS(least(1,COS(0.6595464503868318)*COS(-2.1362079552832234)*COS(RADIANS(locations.lat))*COS(RADIANS(locations.lng))+
+ COS(0.6595464503868318)*SIN(-2.1362079552832234)*COS(RADIANS(locations.lat))*SIN(RADIANS(locations.lng))+
+ SIN(0.6595464503868318)*SIN(RADIANS(locations.lat))))*6376.77271)
+ <= 5))
+  Rendered locations/_search_result.html.erb (3.6ms)
+  Rendered locations/find_by_zipcode.js.erb (8.3ms)
+Completed 200 OK in 758ms (Views: 15.1ms | ActiveRecord: 0.4ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/locations/new" for 127.0.0.1 at 2013-08-25 21:39:14 +0700
+Processing by LocationsController#new as HTML
+Geokit is using the domain: localhost
+  Rendered locations/_form.html.erb (1.4ms)
+  Rendered locations/new.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`remember_token` IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (9.5ms)
+Completed 200 OK in 78ms (Views: 71.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-08-25 21:39:14 +0700
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-08-25 21:39:14 +0700
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-08-25 21:39:14 +0700
+Served asset /bootstrap-alert.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-08-25 21:39:14 +0700
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-08-25 21:39:14 +0700
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-08-25 21:39:14 +0700
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-08-25 21:39:14 +0700
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-08-25 21:39:14 +0700
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-08-25 21:39:14 +0700
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-08-25 21:39:14 +0700
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-08-25 21:39:14 +0700
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-08-25 21:39:14 +0700
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-08-25 21:39:14 +0700
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-08-25 21:39:14 +0700
+Served asset /bootstrap.js - 304 Not Modified (27ms)
+
+
+Started POST "/locations" for 127.0.0.1 at 2013-08-25 21:39:16 +0700
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zkbB4X73O0FCpltaQJ94MRxva1VmqxYN5BWqhOSGxfo=", "location"=>{"address"=>"2943 Walker Ct, Fernley, NV", "zip_code"=>""}, "commit"=>"Create Location"}
+Geokit is using the domain: localhost
+  [1m[35m (0.1ms)[0m  BEGIN
+Google geocoding. Address: 2943 Walker Ct, Fernley, NV. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 2943 Walker Ct, Fernley, NV
+Geocoder.us geocoding. Address: 2943 Walker Ct, Fernley, NV. Result: 38.822134,-119.062956,138 E Walker Rd,Yerington,NV,89447
+
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `locations` (`address`, `created_at`, `lat`, `lng`, `updated_at`, `zip_code`) VALUES ('2943 Walker Ct, Fernley, NV', '2013-08-25 14:39:16', 38.822134, -119.062956, '2013-08-25 14:39:16', '89447')[0m
+  [1m[35m (204.8ms)[0m  COMMIT
+Redirected to http://localhost:3000/locations
+Completed 302 Found in 741ms (ActiveRecord: 205.2ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2013-08-25 21:39:16 +0700
+Processing by LocationsController#index as HTML
+Geokit is using the domain: localhost
+  [1m[36mLocation Load (0.3ms)[0m  [1mSELECT `locations`.* FROM `locations` [0m
+  Rendered locations/index.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`remember_token` IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (2.3ms)
+Completed 200 OK in 111ms (Views: 107.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-08-25 21:39:17 +0700
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-08-25 21:39:17 +0700
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-08-25 21:39:17 +0700
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-08-25 21:39:17 +0700
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-08-25 21:39:17 +0700
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-08-25 21:39:17 +0700
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-08-25 21:39:17 +0700
+Served asset /bootstrap-dropdown.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-08-25 21:39:17 +0700
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-08-25 21:39:17 +0700
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-08-25 21:39:17 +0700
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-08-25 21:39:17 +0700
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-08-25 21:39:17 +0700
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-08-25 21:39:17 +0700
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-08-25 21:39:17 +0700
+Served asset /bootstrap.js - 304 Not Modified (1ms)
+
+
+Started DELETE "/locations/7" for 127.0.0.1 at 2013-08-25 21:39:21 +0700
+Processing by LocationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"zkbB4X73O0FCpltaQJ94MRxva1VmqxYN5BWqhOSGxfo=", "id"=>"7"}
+Geokit is using the domain: localhost
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT `locations`.* FROM `locations` WHERE `locations`.`id` = 7 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM `locations` WHERE `locations`.`id` = 7[0m
+  [1m[35m (77.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/locations
+Completed 302 Found in 81ms (ActiveRecord: 77.9ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2013-08-25 21:39:21 +0700
+Processing by LocationsController#index as HTML
+Geokit is using the domain: localhost
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT `locations`.* FROM `locations` [0m
+  Rendered locations/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`remember_token` IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 90ms (Views: 88.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-08-25 21:39:21 +0700
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-08-25 21:39:21 +0700
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-08-25 21:39:21 +0700
+Served asset /bootstrap-alert.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-08-25 21:39:21 +0700
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-08-25 21:39:21 +0700
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-08-25 21:39:21 +0700
+Served asset /bootstrap-button.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-08-25 21:39:21 +0700
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-08-25 21:39:21 +0700
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-08-25 21:39:21 +0700
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-08-25 21:39:21 +0700
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-08-25 21:39:21 +0700
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-08-25 21:39:21 +0700
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-08-25 21:39:21 +0700
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-08-25 21:39:21 +0700
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2013-08-25 21:41:35 +0700
+Processing by LocationsController#index as HTML
+Geokit is using the domain: localhost
+  [1m[36mLocation Load (0.3ms)[0m  [1mSELECT `locations`.* FROM `locations` [0m
+  Rendered locations/index.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`remember_token` IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (13.2ms)
+Completed 200 OK in 159ms (Views: 144.2ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-08-25 21:41:35 +0700
+Served asset /custom.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-25 21:41:35 +0700
+Served asset /application.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-08-25 21:41:35 +0700
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-08-25 21:41:35 +0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2013-08-25 21:41:35 +0700
+Served asset /locations.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-08-25 21:41:35 +0700
+Served asset /sessions.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/staticpages.css?body=1" for 127.0.0.1 at 2013-08-25 21:41:35 +0700
+Served asset /staticpages.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-25 21:41:35 +0700
+Served asset /users.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-25 21:41:35 +0700
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-25 21:41:35 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-08-25 21:41:35 +0700
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-08-25 21:41:35 +0700
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-08-25 21:41:35 +0700
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-08-25 21:41:35 +0700
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-08-25 21:41:35 +0700
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-08-25 21:41:35 +0700
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-08-25 21:41:35 +0700
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-08-25 21:41:35 +0700
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-08-25 21:41:35 +0700
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-08-25 21:41:35 +0700
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-08-25 21:41:35 +0700
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-08-25 21:41:35 +0700
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-08-25 21:41:35 +0700
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-08-25 21:41:35 +0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-08-25 21:41:35 +0700
+Served asset /bootstrap.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-08-25 21:41:35 +0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2013-08-25 21:41:35 +0700
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/staticpages.js?body=1" for 127.0.0.1 at 2013-08-25 21:41:35 +0700
+Served asset /staticpages.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-25 21:41:35 +0700
+Served asset /users.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-25 21:41:35 +0700
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/find_by_zipcode?zip=94105&distance=10" for 127.0.0.1 at 2013-08-25 21:41:36 +0700
+Processing by LocationsController#find_by_zipcode as */*
+  Parameters: {"zip"=>"94105", "distance"=>"10"}
+Geokit is using the domain: localhost
+Google geocoding. Address: 94105. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 94105
+Geocoder.us geocoding. Address: 94105. Result: 37.789228, -122.3957, San Francisco, CA, 94105
+  [1m[36mLocation Load (0.6ms)[0m  [1mSELECT `locations`.*, 
+ (ACOS(least(1,COS(0.6595464503868318)*COS(-2.1362079552832234)*COS(RADIANS(locations.lat))*COS(RADIANS(locations.lng))+
+ COS(0.6595464503868318)*SIN(-2.1362079552832234)*COS(RADIANS(locations.lat))*SIN(RADIANS(locations.lng))+
+ SIN(0.6595464503868318)*SIN(RADIANS(locations.lat))))*6376.77271)
+ AS distance FROM `locations` WHERE ((locations.lat>37.744302626210825 AND locations.lat<37.83415337378919 AND locations.lng>-122.45254810916201 AND locations.lng<-122.33885189083796)) AND ((
+ (ACOS(least(1,COS(0.6595464503868318)*COS(-2.1362079552832234)*COS(RADIANS(locations.lat))*COS(RADIANS(locations.lng))+
+ COS(0.6595464503868318)*SIN(-2.1362079552832234)*COS(RADIANS(locations.lat))*SIN(RADIANS(locations.lng))+
+ SIN(0.6595464503868318)*SIN(RADIANS(locations.lat))))*6376.77271)
+ <= 5))[0m
+  Rendered locations/_search_result.html.erb (4.3ms)
+  Rendered locations/find_by_zipcode.js.erb (9.2ms)
+Completed 200 OK in 565ms (Views: 21.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2013-08-25 21:43:22 +0700
+Processing by LocationsController#index as HTML
+Geokit is using the domain: localhost
+  [1m[35mLocation Load (0.3ms)[0m  SELECT `locations`.* FROM `locations` 
+  Rendered locations/index.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`remember_token` IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (14.3ms)
+Completed 200 OK in 121ms (Views: 111.0ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-25 21:43:23 +0700
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-08-25 21:43:23 +0700
+Served asset /custom.css - 304 Not Modified (30ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-08-25 21:43:23 +0700
+Served asset /sessions.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-08-25 21:43:23 +0700
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-08-25 21:43:23 +0700
+Served asset /static_pages.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2013-08-25 21:43:23 +0700
+Served asset /locations.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/staticpages.css?body=1" for 127.0.0.1 at 2013-08-25 21:43:23 +0700
+Served asset /staticpages.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-25 21:43:23 +0700
+Served asset /users.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-25 21:43:23 +0700
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-25 21:43:23 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-08-25 21:43:23 +0700
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-08-25 21:43:23 +0700
+Served asset /bootstrap-affix.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-08-25 21:43:23 +0700
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-08-25 21:43:23 +0700
+Served asset /bootstrap-button.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-08-25 21:43:23 +0700
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-08-25 21:43:23 +0700
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-08-25 21:43:23 +0700
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-08-25 21:43:23 +0700
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-08-25 21:43:23 +0700
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-08-25 21:43:23 +0700
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-08-25 21:43:23 +0700
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-08-25 21:43:23 +0700
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-08-25 21:43:23 +0700
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-08-25 21:43:23 +0700
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2013-08-25 21:43:23 +0700
+Served asset /locations.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-08-25 21:43:23 +0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-08-25 21:43:23 +0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/staticpages.js?body=1" for 127.0.0.1 at 2013-08-25 21:43:23 +0700
+Served asset /staticpages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-25 21:43:23 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-25 21:43:23 +0700
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/find_by_zipcode?zip=94105&distance=10" for 127.0.0.1 at 2013-08-25 21:43:24 +0700
+Processing by LocationsController#find_by_zipcode as */*
+  Parameters: {"zip"=>"94105", "distance"=>"10"}
+Geokit is using the domain: localhost
+  [1m[35mLocation Load (0.3ms)[0m  SELECT `locations`.* FROM `locations` WHERE `locations`.`id` = 1 LIMIT 1
+  [1m[36mLocation Load (0.5ms)[0m  [1mSELECT `locations`.*, 
+ (ACOS(least(1,COS(0.6596035575599569)*COS(-2.13617828468594)*COS(RADIANS(locations.lat))*COS(RADIANS(locations.lng))+
+ COS(0.6596035575599569)*SIN(-2.13617828468594)*COS(RADIANS(locations.lat))*SIN(RADIANS(locations.lng))+
+ SIN(0.6596035575599569)*SIN(RADIANS(locations.lat))))*3963.19)
+ AS distance FROM `locations` WHERE ((locations.lat>37.72021507357321 AND locations.lat<37.8647849264268 AND locations.lng>-122.48547264025596 AND locations.lng<-122.30252735974406)) AND ((
+ (ACOS(least(1,COS(0.6596035575599569)*COS(-2.13617828468594)*COS(RADIANS(locations.lat))*COS(RADIANS(locations.lng))+
+ COS(0.6596035575599569)*SIN(-2.13617828468594)*COS(RADIANS(locations.lat))*SIN(RADIANS(locations.lng))+
+ SIN(0.6596035575599569)*SIN(RADIANS(locations.lat))))*3963.19)
+ <= 5))[0m
+  Rendered locations/_search_result.html.erb (4.5ms)
+  Rendered locations/find_by_zipcode.js.erb (9.2ms)
+Completed 200 OK in 24ms (Views: 20.4ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/locations/3" for 127.0.0.1 at 2013-08-25 21:43:36 +0700
+Processing by LocationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"zkbB4X73O0FCpltaQJ94MRxva1VmqxYN5BWqhOSGxfo=", "id"=>"3"}
+Geokit is using the domain: localhost
+  [1m[35mLocation Load (0.3ms)[0m  SELECT `locations`.* FROM `locations` WHERE `locations`.`id` = 3 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM `locations` WHERE `locations`.`id` = 3
+  [1m[36m (70.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/locations
+Completed 302 Found in 95ms (ActiveRecord: 70.8ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2013-08-25 21:43:36 +0700
+Processing by LocationsController#index as HTML
+Geokit is using the domain: localhost
+  [1m[35mLocation Load (0.3ms)[0m  SELECT `locations`.* FROM `locations` 
+  Rendered locations/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`remember_token` IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.2ms)
+Completed 200 OK in 114ms (Views: 111.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-08-25 21:43:36 +0700
+Served asset /custom.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-25 21:43:36 +0700
+Served asset /application.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-08-25 21:43:36 +0700
+Served asset /sessions.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2013-08-25 21:43:36 +0700
+Served asset /locations.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-08-25 21:43:37 +0700
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-08-25 21:43:37 +0700
+Served asset /static_pages.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/staticpages.css?body=1" for 127.0.0.1 at 2013-08-25 21:43:37 +0700
+Served asset /staticpages.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-25 21:43:37 +0700
+Served asset /users.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-25 21:43:37 +0700
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-25 21:43:37 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-08-25 21:43:37 +0700
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-08-25 21:43:37 +0700
+Served asset /bootstrap-affix.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-08-25 21:43:37 +0700
+Served asset /bootstrap-alert.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-08-25 21:43:37 +0700
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-08-25 21:43:37 +0700
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-08-25 21:43:37 +0700
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-08-25 21:43:37 +0700
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-08-25 21:43:37 +0700
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-08-25 21:43:37 +0700
+Served asset /bootstrap-typeahead.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-08-25 21:43:37 +0700
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-08-25 21:43:37 +0700
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-08-25 21:43:37 +0700
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-08-25 21:43:37 +0700
+Served asset /bootstrap-tab.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-08-25 21:43:37 +0700
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2013-08-25 21:43:37 +0700
+Served asset /locations.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-08-25 21:43:37 +0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-08-25 21:43:37 +0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/staticpages.js?body=1" for 127.0.0.1 at 2013-08-25 21:43:37 +0700
+Served asset /staticpages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-25 21:43:37 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-25 21:43:37 +0700
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2013-08-25 21:45:32 +0700
+Processing by LocationsController#index as HTML
+Geokit is using the domain: localhost
+  [1m[35mLocation Load (0.3ms)[0m  SELECT `locations`.* FROM `locations` 
+  Rendered locations/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`remember_token` IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (14.7ms)
+Completed 200 OK in 149ms (Views: 116.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-08-25 21:45:32 +0700
+Served asset /custom.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-08-25 21:45:32 +0700
+Served asset /scaffolds.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2013-08-25 21:45:32 +0700
+Served asset /locations.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-08-25 21:45:32 +0700
+Served asset /sessions.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-08-25 21:45:32 +0700
+Served asset /static_pages.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-25 21:45:32 +0700
+Served asset /application.css - 304 Not Modified (37ms)
+
+
+Started GET "/assets/staticpages.css?body=1" for 127.0.0.1 at 2013-08-25 21:45:32 +0700
+Served asset /staticpages.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-25 21:45:32 +0700
+Served asset /users.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-25 21:45:32 +0700
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-25 21:45:32 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-08-25 21:45:32 +0700
+Served asset /bootstrap-transition.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-08-25 21:45:32 +0700
+Served asset /bootstrap-affix.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-08-25 21:45:32 +0700
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-08-25 21:45:32 +0700
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-08-25 21:45:32 +0700
+Served asset /bootstrap-carousel.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-08-25 21:45:32 +0700
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-08-25 21:45:32 +0700
+Served asset /bootstrap-dropdown.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-08-25 21:45:32 +0700
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-08-25 21:45:32 +0700
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-08-25 21:45:32 +0700
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-08-25 21:45:32 +0700
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-08-25 21:45:32 +0700
+Served asset /bootstrap-popover.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-08-25 21:45:32 +0700
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-08-25 21:45:32 +0700
+Served asset /bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2013-08-25 21:45:32 +0700
+Served asset /locations.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-08-25 21:45:32 +0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-08-25 21:45:32 +0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/staticpages.js?body=1" for 127.0.0.1 at 2013-08-25 21:45:32 +0700
+Served asset /staticpages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-25 21:45:32 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-25 21:45:32 +0700
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/find_by_zipcode?zip=94105&distance=10" for 127.0.0.1 at 2013-08-25 21:45:33 +0700
+Processing by LocationsController#find_by_zipcode as */*
+  Parameters: {"zip"=>"94105", "distance"=>"10"}
+Geokit is using the domain: localhost
+  [1m[35mLocation Load (0.4ms)[0m  SELECT `locations`.* FROM `locations` WHERE `locations`.`id` = 1 LIMIT 1
+Google geocoding. Address: 94105. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 94105
+Geocoder.us geocoding. Address: 94105. Result: 37.789228, -122.3957, San Francisco, CA, 94105
+  [1m[36mLocation Load (0.5ms)[0m  [1mSELECT `locations`.*, 
+ (ACOS(least(1,COS(0.6595464503868318)*COS(-2.1362079552832234)*COS(RADIANS(locations.lat))*COS(RADIANS(locations.lng))+
+ COS(0.6595464503868318)*SIN(-2.1362079552832234)*COS(RADIANS(locations.lat))*SIN(RADIANS(locations.lng))+
+ SIN(0.6595464503868318)*SIN(RADIANS(locations.lat))))*3963.19)
+ AS distance FROM `locations` WHERE ((locations.lat>37.716943073573205 AND locations.lat<37.861512926426805 AND locations.lng>-122.48716858973533 AND locations.lng<-122.30423141026465)) AND ((
+ (ACOS(least(1,COS(0.6595464503868318)*COS(-2.1362079552832234)*COS(RADIANS(locations.lat))*COS(RADIANS(locations.lng))+
+ COS(0.6595464503868318)*SIN(-2.1362079552832234)*COS(RADIANS(locations.lat))*SIN(RADIANS(locations.lng))+
+ SIN(0.6595464503868318)*SIN(RADIANS(locations.lat))))*3963.19)
+ <= 5))[0m
+  Rendered locations/_search_result.html.erb (3.9ms)
+  Rendered locations/find_by_zipcode.js.erb (7.8ms)
+Completed 200 OK in 540ms (Views: 17.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2013-08-25 21:46:17 +0700
+Processing by LocationsController#index as HTML
+Geokit is using the domain: localhost
+  [1m[35mLocation Load (0.3ms)[0m  SELECT `locations`.* FROM `locations` 
+  Rendered locations/index.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`remember_token` IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (9.6ms)
+Completed 200 OK in 106ms (Views: 89.7ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-25 21:46:18 +0700
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2013-08-25 21:46:18 +0700
+Served asset /locations.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-08-25 21:46:18 +0700
+Served asset /custom.css - 304 Not Modified (25ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-08-25 21:46:18 +0700
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-08-25 21:46:18 +0700
+Served asset /static_pages.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-08-25 21:46:18 +0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/staticpages.css?body=1" for 127.0.0.1 at 2013-08-25 21:46:18 +0700
+Served asset /staticpages.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-25 21:46:18 +0700
+Served asset /users.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-25 21:46:18 +0700
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-25 21:46:18 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-08-25 21:46:18 +0700
+Served asset /bootstrap-transition.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-08-25 21:46:18 +0700
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-08-25 21:46:18 +0700
+Served asset /bootstrap-alert.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-08-25 21:46:18 +0700
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-08-25 21:46:18 +0700
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-08-25 21:46:18 +0700
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-08-25 21:46:18 +0700
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-08-25 21:46:18 +0700
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-08-25 21:46:18 +0700
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-08-25 21:46:18 +0700
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-08-25 21:46:18 +0700
+Served asset /bootstrap-tooltip.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-08-25 21:46:18 +0700
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-08-25 21:46:18 +0700
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-08-25 21:46:18 +0700
+Served asset /bootstrap.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2013-08-25 21:46:18 +0700
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-08-25 21:46:18 +0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-08-25 21:46:18 +0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/staticpages.js?body=1" for 127.0.0.1 at 2013-08-25 21:46:18 +0700
+Served asset /staticpages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-25 21:46:18 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-25 21:46:18 +0700
+Served asset /application.js - 304 Not Modified (25ms)
+
+
+Started GET "/find_by_zipcode?zip=94105&distance=10" for 127.0.0.1 at 2013-08-25 21:46:19 +0700
+Processing by LocationsController#find_by_zipcode as */*
+  Parameters: {"zip"=>"94105", "distance"=>"10"}
+Geokit is using the domain: localhost
+Google geocoding. Address: 94105. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 94105
+Geocoder.us geocoding. Address: 94105. Result: 37.789228, -122.3957, San Francisco, CA, 94105
+  [1m[35mLocation Load (0.6ms)[0m  SELECT `locations`.*, 
+ (ACOS(least(1,COS(0.6595464503868318)*COS(-2.1362079552832234)*COS(RADIANS(locations.lat))*COS(RADIANS(locations.lng))+
+ COS(0.6595464503868318)*SIN(-2.1362079552832234)*COS(RADIANS(locations.lat))*SIN(RADIANS(locations.lng))+
+ SIN(0.6595464503868318)*SIN(RADIANS(locations.lat))))*3963.19)
+ AS distance FROM `locations` WHERE ((locations.lat>37.64465814714641 AND locations.lat<37.933797852853594 AND locations.lng>-122.57863700441435 AND locations.lng<-122.21276299558563)) AND ((
+ (ACOS(least(1,COS(0.6595464503868318)*COS(-2.1362079552832234)*COS(RADIANS(locations.lat))*COS(RADIANS(locations.lng))+
+ COS(0.6595464503868318)*SIN(-2.1362079552832234)*COS(RADIANS(locations.lat))*SIN(RADIANS(locations.lng))+
+ SIN(0.6595464503868318)*SIN(RADIANS(locations.lat))))*3963.19)
+ <= 10))
+  Rendered locations/_search_result.html.erb (4.0ms)
+  Rendered locations/find_by_zipcode.js.erb (8.3ms)
+Completed 200 OK in 545ms (Views: 17.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/find_by_zipcode?zip=94105&distance=1" for 127.0.0.1 at 2013-08-25 21:46:22 +0700
+Processing by LocationsController#find_by_zipcode as */*
+  Parameters: {"zip"=>"94105", "distance"=>"1"}
+Geokit is using the domain: localhost
+Google geocoding. Address: 94105. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 94105
+Geocoder.us geocoding. Address: 94105. Result: 37.789228, -122.3957, San Francisco, CA, 94105
+  [1m[36mLocation Load (0.6ms)[0m  [1mSELECT `locations`.*, 
+ (ACOS(least(1,COS(0.6595464503868318)*COS(-2.1362079552832234)*COS(RADIANS(locations.lat))*COS(RADIANS(locations.lng))+
+ COS(0.6595464503868318)*SIN(-2.1362079552832234)*COS(RADIANS(locations.lat))*SIN(RADIANS(locations.lng))+
+ SIN(0.6595464503868318)*SIN(RADIANS(locations.lat))))*3963.19)
+ AS distance FROM `locations` WHERE ((locations.lat>37.77477101471465 AND locations.lat<37.80368498528536 AND locations.lng>-122.41399372354887 AND locations.lng<-122.37740627645111)) AND ((
+ (ACOS(least(1,COS(0.6595464503868318)*COS(-2.1362079552832234)*COS(RADIANS(locations.lat))*COS(RADIANS(locations.lng))+
+ COS(0.6595464503868318)*SIN(-2.1362079552832234)*COS(RADIANS(locations.lat))*SIN(RADIANS(locations.lng))+
+ SIN(0.6595464503868318)*SIN(RADIANS(locations.lat))))*3963.19)
+ <= 1))[0m
+  Rendered locations/_search_result.html.erb (3.0ms)
+  Rendered locations/find_by_zipcode.js.erb (8.2ms)
+Completed 200 OK in 541ms (Views: 19.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2013-08-25 21:47:05 +0700
+Processing by LocationsController#index as HTML
+Geokit is using the domain: localhost
+  [1m[35mLocation Load (0.3ms)[0m  SELECT `locations`.* FROM `locations` 
+  Rendered locations/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`remember_token` IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (15.9ms)
+Completed 200 OK in 137ms (Views: 122.4ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-25 21:47:06 +0700
+Served asset /application.css - 304 Not Modified (36ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-08-25 21:47:06 +0700
+Served asset /custom.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2013-08-25 21:47:06 +0700
+Served asset /locations.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-08-25 21:47:06 +0700
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-08-25 21:47:06 +0700
+Served asset /sessions.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-08-25 21:47:06 +0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/staticpages.css?body=1" for 127.0.0.1 at 2013-08-25 21:47:06 +0700
+Served asset /staticpages.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-25 21:47:06 +0700
+Served asset /users.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-25 21:47:06 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-25 21:47:06 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-08-25 21:47:06 +0700
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-08-25 21:47:06 +0700
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-08-25 21:47:06 +0700
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-08-25 21:47:06 +0700
+Served asset /bootstrap-button.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-08-25 21:47:06 +0700
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-08-25 21:47:06 +0700
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-08-25 21:47:06 +0700
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-08-25 21:47:06 +0700
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-08-25 21:47:06 +0700
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-08-25 21:47:06 +0700
+Served asset /bootstrap-tab.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-08-25 21:47:06 +0700
+Served asset /bootstrap-tooltip.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-08-25 21:47:06 +0700
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-08-25 21:47:06 +0700
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-08-25 21:47:06 +0700
+Served asset /bootstrap.js - 304 Not Modified (22ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2013-08-25 21:47:06 +0700
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-08-25 21:47:06 +0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-08-25 21:47:06 +0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/staticpages.js?body=1" for 127.0.0.1 at 2013-08-25 21:47:06 +0700
+Served asset /staticpages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-25 21:47:06 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-25 21:47:06 +0700
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/find_by_zipcode?zip=94105&distance=10" for 127.0.0.1 at 2013-08-25 21:47:07 +0700
+Processing by LocationsController#find_by_zipcode as */*
+  Parameters: {"zip"=>"94105", "distance"=>"10"}
+Geokit is using the domain: localhost
+Google geocoding. Address: 94105. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 94105
+Geocoder.us geocoding. Address: 94105. Result: 37.789228, -122.3957, San Francisco, CA, 94105
+  [1m[35mLocation Load (0.6ms)[0m  SELECT `locations`.*, 
+ (ACOS(least(1,COS(0.6595464503868318)*COS(-2.1362079552832234)*COS(RADIANS(locations.lat))*COS(RADIANS(locations.lng))+
+ COS(0.6595464503868318)*SIN(-2.1362079552832234)*COS(RADIANS(locations.lat))*SIN(RADIANS(locations.lng))+
+ SIN(0.6595464503868318)*SIN(RADIANS(locations.lat))))*3963.19)
+ AS distance FROM `locations` WHERE ((locations.lat>37.64465814714641 AND locations.lat<37.933797852853594 AND locations.lng>-122.57863700441435 AND locations.lng<-122.21276299558563)) AND ((
+ (ACOS(least(1,COS(0.6595464503868318)*COS(-2.1362079552832234)*COS(RADIANS(locations.lat))*COS(RADIANS(locations.lng))+
+ COS(0.6595464503868318)*SIN(-2.1362079552832234)*COS(RADIANS(locations.lat))*SIN(RADIANS(locations.lng))+
+ SIN(0.6595464503868318)*SIN(RADIANS(locations.lat))))*3963.19)
+ <= 10))
+  Rendered locations/_search_result.html.erb (4.3ms)
+  Rendered locations/find_by_zipcode.js.erb (9.0ms)
+Completed 200 OK in 542ms (Views: 20.7ms | ActiveRecord: 0.6ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/locations" for 192.168.0.103 at 2013-08-25 21:49:00 +0700
+Processing by LocationsController#index as HTML
+Geokit is using the domain: 
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT `locations`.* FROM `locations` [0m
+  Rendered locations/index.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`remember_token` IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (32.4ms)
+Completed 200 OK in 221ms (Views: 206.9ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/locations" for 192.168.0.103 at 2013-08-25 21:49:00 +0700
+Processing by LocationsController#index as HTML
+Geokit is using the domain: 
+  [1m[36mLocation Load (0.3ms)[0m  [1mSELECT `locations`.* FROM `locations` [0m
+  Rendered locations/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`remember_token` IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 112ms (Views: 109.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/custom.css?body=1" for 192.168.0.103 at 2013-08-25 21:49:00 +0700
+Served asset /custom.css - 200 OK (7ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.103 at 2013-08-25 21:49:00 +0700
+Served asset /application.css - 200 OK (19ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 192.168.0.103 at 2013-08-25 21:49:00 +0700
+Served asset /sessions.css - 200 OK (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.0.103 at 2013-08-25 21:49:00 +0700
+Served asset /scaffolds.css - 200 OK (2ms)
+
+
+Started GET "/assets/locations.css?body=1" for 192.168.0.103 at 2013-08-25 21:49:00 +0700
+Served asset /locations.css - 200 OK (2ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 192.168.0.103 at 2013-08-25 21:49:00 +0700
+Served asset /static_pages.css - 200 OK (2ms)
+
+
+Started GET "/assets/staticpages.css?body=1" for 192.168.0.103 at 2013-08-25 21:49:00 +0700
+Served asset /staticpages.css - 200 OK (3ms)
+
+
+Started GET "/assets/users.css?body=1" for 192.168.0.103 at 2013-08-25 21:49:00 +0700
+Served asset /users.css - 200 OK (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.103 at 2013-08-25 21:49:00 +0700
+Served asset /jquery.js - 200 OK (9ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.103 at 2013-08-25 21:49:00 +0700
+Served asset /jquery_ujs.js - 200 OK (4ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 192.168.0.103 at 2013-08-25 21:49:00 +0700
+Served asset /bootstrap-affix.js - 200 OK (26ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 192.168.0.103 at 2013-08-25 21:49:00 +0700
+Served asset /bootstrap-transition.js - 200 OK (2ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 192.168.0.103 at 2013-08-25 21:49:00 +0700
+Served asset /bootstrap-alert.js - 200 OK (2ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 192.168.0.103 at 2013-08-25 21:49:00 +0700
+Served asset /bootstrap-button.js - 200 OK (3ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 192.168.0.103 at 2013-08-25 21:49:00 +0700
+Served asset /bootstrap-carousel.js - 200 OK (2ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 192.168.0.103 at 2013-08-25 21:49:00 +0700
+Served asset /bootstrap-collapse.js - 200 OK (3ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 192.168.0.103 at 2013-08-25 21:49:00 +0700
+Served asset /bootstrap-dropdown.js - 200 OK (7ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 192.168.0.103 at 2013-08-25 21:49:00 +0700
+Served asset /bootstrap-modal.js - 200 OK (7ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 192.168.0.103 at 2013-08-25 21:49:00 +0700
+Served asset /bootstrap-scrollspy.js - 200 OK (6ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 192.168.0.103 at 2013-08-25 21:49:00 +0700
+Served asset /bootstrap-tab.js - 200 OK (5ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 192.168.0.103 at 2013-08-25 21:49:00 +0700
+Served asset /bootstrap-tooltip.js - 200 OK (7ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 192.168.0.103 at 2013-08-25 21:49:00 +0700
+Served asset /bootstrap-popover.js - 200 OK (5ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 192.168.0.103 at 2013-08-25 21:49:00 +0700
+Served asset /bootstrap-typeahead.js - 200 OK (5ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 192.168.0.103 at 2013-08-25 21:49:01 +0700
+Served asset /bootstrap.js - 200 OK (17ms)
+
+
+Started GET "/assets/locations.js?body=1" for 192.168.0.103 at 2013-08-25 21:49:01 +0700
+Served asset /locations.js - 200 OK (2ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 192.168.0.103 at 2013-08-25 21:49:01 +0700
+Served asset /sessions.js - 200 OK (2ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 192.168.0.103 at 2013-08-25 21:49:01 +0700
+Served asset /static_pages.js - 200 OK (2ms)
+
+
+Started GET "/assets/staticpages.js?body=1" for 192.168.0.103 at 2013-08-25 21:49:01 +0700
+Served asset /staticpages.js - 200 OK (2ms)
+
+
+Started GET "/assets/users.js?body=1" for 192.168.0.103 at 2013-08-25 21:49:01 +0700
+Served asset /users.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.103 at 2013-08-25 21:49:01 +0700
+Served asset /application.js - 200 OK (49ms)

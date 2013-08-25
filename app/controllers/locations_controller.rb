@@ -20,9 +20,8 @@ class LocationsController < ApplicationController
   def find_by_zipcode
     zip = params[:zip]
     distance = params[:distance]
-    @locations= Location.within(5, :units => :kms, :origin => '94105')
-
-    #  @geo = Geokit::Geocoders::MultiGeocoder.geocode zip
+    #  here = Location.find(1)
+    @locations= Location.geo_scope(:within => params[:distance], :origin => params[:zip])
     respond_to do |format|
       format.js
     end
@@ -62,7 +61,7 @@ class LocationsController < ApplicationController
 
     respond_to do |format|
       if @location.save
-        format.html { redirect_to @location, notice: 'Location was successfully created.' }
+        format.html { redirect_to locations_url, notice: 'Location was successfully created.' }
         format.json { render json: @location, status: :created, location: @location }
       else
         format.html { render action: "new" }

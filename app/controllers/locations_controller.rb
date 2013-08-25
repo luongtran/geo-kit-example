@@ -20,7 +20,7 @@ class LocationsController < ApplicationController
   def find_by_zipcode
     zip = params[:zip]
     distance = params[:distance]
-    #  here = Location.find(1)
+
     @locations= Location.geo_scope(:within => params[:distance], :origin => params[:zip])
     respond_to do |format|
       format.js

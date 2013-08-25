@@ -26,14 +26,12 @@
 <script type="text/javascript">
     $(document).ready(function () {
         $('#find_by_zipcode_btn').on("click", function () {
-            var url = "/find_by_zipcode?zip=" + $('#zipcode_field').val() + "&distance=" +$('#distance_field').val();
+            var url = "/find_by_zipcode?zip=" + $('#zipcode_field').val() + "&distance=" + $('#distance_field').val();
             $.get(url,function () {
             }).done(function () {
-
+                        $("html, body").animate({ scrollTop: $(document).height() }, 1000);
                     });
         });
-
-
     });
 
 </script>
@@ -43,12 +41,13 @@
     <br/>
 <% end %>
 <br/>
-<%= text_field_tag 'zipcode', 94105, placeholder: 'Enter zipcode', size: 20,id: 'zipcode_field' %>
-<%= number_field_tag 'distance', 10, placeholder: 'distance', size: 20,id: 'distance_field'  %>
-<%= button_tag 'Find !',:id => 'find_by_zipcode_btn' %>
-
+<%= label_tag 'Zipcode'%>
+<%= text_field_tag 'zipcode', 94105, placeholder: 'Enter zipcode', size: 20, id: 'zipcode_field', :style => "max-width: 100px;" %>
+<%= label_tag 'Distance'%>
+<%= number_field_tag 'distance', 5, placeholder: 'distance', size: 20, id: 'distance_field', :style => "max-width: 100px;" %>
+<br />
+<%= button_tag 'Find !', :id => 'find_by_zipcode_btn' %>
 <hr/>
-
 <h3> Result</h3>
 <div class="result">
 </div>

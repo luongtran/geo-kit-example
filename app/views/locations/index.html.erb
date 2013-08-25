@@ -1,5 +1,14 @@
+<style>
+    .scroll-table{
+        height: 200px;
+        overflow: auto;
+        border: #333333;
+    }
+</style>
 <%= link_to 'New Location', new_location_path, :class => 'btn btn-snall ' %>
 <h1>Listing locations</h1>
+
+<div class="scroll-table">
 <table class="table">
   <tr>
     <th>Address</th>
@@ -19,11 +28,8 @@
       </tr>
   <% end %>
 </table>
-<br/>
-
-<hr/>
-
-<script type="text/javascript">
+  </div>
+ <script type="text/javascript">
     $(document).ready(function () {
         $('#find_by_zipcode_btn').on("click", function () {
             var url = "/find_by_zipcode?zip=" + $('#zipcode_field').val() + "&distance=" + $('#distance_field').val();
@@ -33,7 +39,6 @@
                     });
         });
     });
-
 </script>
 <% if false %>
     <%= text_field_tag 'address', nil, placeholder: 'Enter address', size: 20, id: 'address_field' %>

@@ -8,7 +8,6 @@ class LocationsController < ApplicationController
       format.json { render json: @locations }
     end
   end
-
   def find_by_address
     addr = params[:address]
     @geo = Geokit::Geocoders::MultiGeocoder.geocode addr
@@ -20,13 +19,11 @@ class LocationsController < ApplicationController
   def find_by_zipcode
     zip = params[:zip]
     distance = params[:distance]
-
     @locations= Location.geo_scope(:within => params[:distance], :origin => params[:zip])
     respond_to do |format|
       format.js
     end
   end
-
   # GET /locations/1
   # GET /locations/1.json
   def show

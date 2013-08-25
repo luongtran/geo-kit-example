@@ -52359,3 +52359,1840 @@ Served asset /users.js - 304 Not Modified (1ms)
 
 Started GET "/assets/application.js?body=1" for 192.168.0.103 at 2013-08-25 21:54:05 +0700
 Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/find_by_zipcode?zip=94105&distance=5" for 192.168.0.103 at 2013-08-25 21:59:44 +0700
+Processing by LocationsController#find_by_zipcode as */*
+  Parameters: {"zip"=>"94105", "distance"=>"5"}
+Geokit is using the domain: 
+Google geocoding. Address: 94105. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 94105
+Geocoder.us geocoding. Address: 94105. Result: 37.789228, -122.3957, San Francisco, CA, 94105
+  [1m[35mLocation Load (0.5ms)[0m  SELECT `locations`.*, 
+ (ACOS(least(1,COS(0.6595464503868318)*COS(-2.1362079552832234)*COS(RADIANS(locations.lat))*COS(RADIANS(locations.lng))+
+ COS(0.6595464503868318)*SIN(-2.1362079552832234)*COS(RADIANS(locations.lat))*SIN(RADIANS(locations.lng))+
+ SIN(0.6595464503868318)*SIN(RADIANS(locations.lat))))*3963.19)
+ AS distance FROM `locations` WHERE ((locations.lat>37.716943073573205 AND locations.lat<37.861512926426805 AND locations.lng>-122.48716858973533 AND locations.lng<-122.30423141026465)) AND ((
+ (ACOS(least(1,COS(0.6595464503868318)*COS(-2.1362079552832234)*COS(RADIANS(locations.lat))*COS(RADIANS(locations.lng))+
+ COS(0.6595464503868318)*SIN(-2.1362079552832234)*COS(RADIANS(locations.lat))*SIN(RADIANS(locations.lng))+
+ SIN(0.6595464503868318)*SIN(RADIANS(locations.lat))))*3963.19)
+ <= 5))
+  Rendered locations/_search_result.html.erb (16.4ms)
+  Rendered locations/find_by_zipcode.js.erb (21.3ms)
+Completed 200 OK in 1006ms (Views: 31.1ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/find_by_zipcode?zip=94105&distance=1" for 192.168.0.103 at 2013-08-25 21:59:50 +0700
+Processing by LocationsController#find_by_zipcode as */*
+  Parameters: {"zip"=>"94105", "distance"=>"1"}
+Geokit is using the domain: 
+Google geocoding. Address: 94105. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 94105
+Geocoder.us geocoding. Address: 94105. Result: 37.789228, -122.3957, San Francisco, CA, 94105
+  [1m[36mLocation Load (0.7ms)[0m  [1mSELECT `locations`.*, 
+ (ACOS(least(1,COS(0.6595464503868318)*COS(-2.1362079552832234)*COS(RADIANS(locations.lat))*COS(RADIANS(locations.lng))+
+ COS(0.6595464503868318)*SIN(-2.1362079552832234)*COS(RADIANS(locations.lat))*SIN(RADIANS(locations.lng))+
+ SIN(0.6595464503868318)*SIN(RADIANS(locations.lat))))*3963.19)
+ AS distance FROM `locations` WHERE ((locations.lat>37.77477101471465 AND locations.lat<37.80368498528536 AND locations.lng>-122.41399372354887 AND locations.lng<-122.37740627645111)) AND ((
+ (ACOS(least(1,COS(0.6595464503868318)*COS(-2.1362079552832234)*COS(RADIANS(locations.lat))*COS(RADIANS(locations.lng))+
+ COS(0.6595464503868318)*SIN(-2.1362079552832234)*COS(RADIANS(locations.lat))*SIN(RADIANS(locations.lng))+
+ SIN(0.6595464503868318)*SIN(RADIANS(locations.lat))))*3963.19)
+ <= 1))[0m
+  Rendered locations/_search_result.html.erb (3.3ms)
+  Rendered locations/find_by_zipcode.js.erb (7.9ms)
+Completed 200 OK in 540ms (Views: 19.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/locations" for 192.168.0.25 at 2013-08-25 22:01:09 +0700
+Processing by LocationsController#index as HTML
+Geokit is using the domain: 
+  [1m[35mLocation Load (0.3ms)[0m  SELECT `locations`.* FROM `locations` 
+  Rendered locations/index.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`remember_token` IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (14.9ms)
+Completed 200 OK in 154ms (Views: 149.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.25 at 2013-08-25 22:01:10 +0700
+Served asset /application.css - 200 OK (11ms)
+
+
+Started GET "/assets/custom.css?body=1" for 192.168.0.25 at 2013-08-25 22:01:10 +0700
+Served asset /custom.css - 200 OK (31ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.0.25 at 2013-08-25 22:01:10 +0700
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 192.168.0.25 at 2013-08-25 22:01:10 +0700
+Served asset /locations.css - 200 OK (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 192.168.0.25 at 2013-08-25 22:01:10 +0700
+Served asset /sessions.css - 200 OK (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 192.168.0.25 at 2013-08-25 22:01:10 +0700
+Served asset /static_pages.css - 200 OK (0ms)
+
+
+Started GET "/assets/staticpages.css?body=1" for 192.168.0.25 at 2013-08-25 22:01:10 +0700
+Served asset /staticpages.css - 200 OK (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 192.168.0.25 at 2013-08-25 22:01:10 +0700
+Served asset /users.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.25 at 2013-08-25 22:01:10 +0700
+Served asset /jquery.js - 200 OK (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.25 at 2013-08-25 22:01:10 +0700
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 192.168.0.25 at 2013-08-25 22:01:10 +0700
+Served asset /bootstrap-transition.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 192.168.0.25 at 2013-08-25 22:01:10 +0700
+Served asset /bootstrap-affix.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 192.168.0.25 at 2013-08-25 22:01:10 +0700
+Served asset /bootstrap-alert.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 192.168.0.25 at 2013-08-25 22:01:10 +0700
+Served asset /bootstrap-button.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 192.168.0.25 at 2013-08-25 22:01:10 +0700
+Served asset /bootstrap-carousel.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 192.168.0.25 at 2013-08-25 22:01:10 +0700
+Served asset /bootstrap-collapse.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 192.168.0.25 at 2013-08-25 22:01:10 +0700
+Served asset /bootstrap-dropdown.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 192.168.0.25 at 2013-08-25 22:01:10 +0700
+Served asset /bootstrap-scrollspy.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 192.168.0.25 at 2013-08-25 22:01:10 +0700
+Served asset /bootstrap-modal.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 192.168.0.25 at 2013-08-25 22:01:10 +0700
+Served asset /bootstrap-tab.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 192.168.0.25 at 2013-08-25 22:01:10 +0700
+Served asset /bootstrap-popover.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 192.168.0.25 at 2013-08-25 22:01:10 +0700
+Served asset /bootstrap-tooltip.js - 200 OK (2ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 192.168.0.25 at 2013-08-25 22:01:10 +0700
+Served asset /bootstrap.js - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 192.168.0.25 at 2013-08-25 22:01:10 +0700
+Served asset /bootstrap-typeahead.js - 200 OK (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 192.168.0.25 at 2013-08-25 22:01:10 +0700
+Served asset /locations.js - 200 OK (3ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 192.168.0.25 at 2013-08-25 22:01:10 +0700
+Served asset /sessions.js - 200 OK (1ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 192.168.0.25 at 2013-08-25 22:01:10 +0700
+Served asset /static_pages.js - 200 OK (0ms)
+
+
+Started GET "/assets/staticpages.js?body=1" for 192.168.0.25 at 2013-08-25 22:01:10 +0700
+Served asset /staticpages.js - 200 OK (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 192.168.0.25 at 2013-08-25 22:01:10 +0700
+Served asset /users.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.25 at 2013-08-25 22:01:10 +0700
+Served asset /application.js - 200 OK (32ms)
+
+
+Started GET "/find_by_zipcode?zip=94105&distance=5" for 192.168.0.25 at 2013-08-25 22:01:20 +0700
+Processing by LocationsController#find_by_zipcode as */*
+  Parameters: {"zip"=>"94105", "distance"=>"5"}
+Geokit is using the domain: 
+Google geocoding. Address: 94105. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 94105
+Geocoder.us geocoding. Address: 94105. Result: 37.789228, -122.3957, San Francisco, CA, 94105
+  [1m[35mLocation Load (0.6ms)[0m  SELECT `locations`.*, 
+ (ACOS(least(1,COS(0.6595464503868318)*COS(-2.1362079552832234)*COS(RADIANS(locations.lat))*COS(RADIANS(locations.lng))+
+ COS(0.6595464503868318)*SIN(-2.1362079552832234)*COS(RADIANS(locations.lat))*SIN(RADIANS(locations.lng))+
+ SIN(0.6595464503868318)*SIN(RADIANS(locations.lat))))*3963.19)
+ AS distance FROM `locations` WHERE ((locations.lat>37.716943073573205 AND locations.lat<37.861512926426805 AND locations.lng>-122.48716858973533 AND locations.lng<-122.30423141026465)) AND ((
+ (ACOS(least(1,COS(0.6595464503868318)*COS(-2.1362079552832234)*COS(RADIANS(locations.lat))*COS(RADIANS(locations.lng))+
+ COS(0.6595464503868318)*SIN(-2.1362079552832234)*COS(RADIANS(locations.lat))*SIN(RADIANS(locations.lng))+
+ SIN(0.6595464503868318)*SIN(RADIANS(locations.lat))))*3963.19)
+ <= 5))
+  Rendered locations/_search_result.html.erb (4.0ms)
+  Rendered locations/find_by_zipcode.js.erb (8.7ms)
+Completed 200 OK in 556ms (Views: 20.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/locations" for 192.168.0.103 at 2013-08-25 22:06:24 +0700
+Processing by LocationsController#index as HTML
+Geokit is using the domain: 
+  [1m[36mLocation Load (0.3ms)[0m  [1mSELECT `locations`.* FROM `locations` [0m
+  Rendered locations/index.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`remember_token` IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 99ms (Views: 97.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/custom.css?body=1" for 192.168.0.103 at 2013-08-25 22:06:24 +0700
+Served asset /custom.css - 304 Not Modified (21ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.103 at 2013-08-25 22:06:25 +0700
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 192.168.0.103 at 2013-08-25 22:06:25 +0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 192.168.0.103 at 2013-08-25 22:06:25 +0700
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.0.103 at 2013-08-25 22:06:25 +0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 192.168.0.103 at 2013-08-25 22:06:25 +0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/staticpages.css?body=1" for 192.168.0.103 at 2013-08-25 22:06:25 +0700
+Served asset /staticpages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 192.168.0.103 at 2013-08-25 22:06:25 +0700
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:25 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:25 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:25 +0700
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:25 +0700
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:25 +0700
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:25 +0700
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:25 +0700
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:25 +0700
+Served asset /bootstrap-dropdown.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:25 +0700
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:25 +0700
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:25 +0700
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:25 +0700
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:25 +0700
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:25 +0700
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:25 +0700
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:25 +0700
+Served asset /bootstrap.js - 304 Not Modified (24ms)
+
+
+Started GET "/assets/locations.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:25 +0700
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:25 +0700
+Served asset /sessions.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/staticpages.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:25 +0700
+Served asset /staticpages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:25 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:25 +0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:25 +0700
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/locations" for 192.168.0.103 at 2013-08-25 22:06:33 +0700
+Processing by LocationsController#index as HTML
+Geokit is using the domain: 
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT `locations`.* FROM `locations` [0m
+  Rendered locations/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`remember_token` IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 105ms (Views: 103.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/custom.css?body=1" for 192.168.0.103 at 2013-08-25 22:06:33 +0700
+Served asset /custom.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/locations.css?body=1" for 192.168.0.103 at 2013-08-25 22:06:33 +0700
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 192.168.0.103 at 2013-08-25 22:06:33 +0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 192.168.0.103 at 2013-08-25 22:06:33 +0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.0.103 at 2013-08-25 22:06:33 +0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.103 at 2013-08-25 22:06:33 +0700
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/staticpages.css?body=1" for 192.168.0.103 at 2013-08-25 22:06:33 +0700
+Served asset /staticpages.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 192.168.0.103 at 2013-08-25 22:06:33 +0700
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:33 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:33 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:33 +0700
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:33 +0700
+Served asset /bootstrap-affix.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:33 +0700
+Served asset /bootstrap-alert.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:33 +0700
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:33 +0700
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:33 +0700
+Served asset /bootstrap-carousel.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:33 +0700
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:33 +0700
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:33 +0700
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:33 +0700
+Served asset /bootstrap-tab.js - 304 Not Modified (22ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:33 +0700
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:33 +0700
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:33 +0700
+Served asset /bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:33 +0700
+Served asset /bootstrap-typeahead.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/locations.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:33 +0700
+Served asset /locations.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:33 +0700
+Served asset /sessions.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:33 +0700
+Served asset /static_pages.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/staticpages.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:33 +0700
+Served asset /staticpages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:33 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:33 +0700
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/locations" for 192.168.0.103 at 2013-08-25 22:06:39 +0700
+Processing by LocationsController#index as HTML
+Geokit is using the domain: 
+  [1m[36mLocation Load (0.3ms)[0m  [1mSELECT `locations`.* FROM `locations` [0m
+  Rendered locations/index.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`remember_token` IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (2.2ms)
+Completed 200 OK in 125ms (Views: 122.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.103 at 2013-08-25 22:06:39 +0700
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/locations.css?body=1" for 192.168.0.103 at 2013-08-25 22:06:39 +0700
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 192.168.0.103 at 2013-08-25 22:06:39 +0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 192.168.0.103 at 2013-08-25 22:06:39 +0700
+Served asset /custom.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.0.103 at 2013-08-25 22:06:40 +0700
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 192.168.0.103 at 2013-08-25 22:06:40 +0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/staticpages.css?body=1" for 192.168.0.103 at 2013-08-25 22:06:40 +0700
+Served asset /staticpages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 192.168.0.103 at 2013-08-25 22:06:40 +0700
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:40 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:40 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:40 +0700
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:40 +0700
+Served asset /bootstrap-affix.js - 304 Not Modified (19ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:40 +0700
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:40 +0700
+Served asset /bootstrap-alert.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:40 +0700
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:40 +0700
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:40 +0700
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:40 +0700
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:40 +0700
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:40 +0700
+Served asset /bootstrap-tab.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:40 +0700
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:40 +0700
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:40 +0700
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:40 +0700
+Served asset /bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:40 +0700
+Served asset /sessions.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/locations.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:40 +0700
+Served asset /locations.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:40 +0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/staticpages.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:40 +0700
+Served asset /staticpages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:40 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.103 at 2013-08-25 22:06:40 +0700
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/locations" for 192.168.0.103 at 2013-08-25 22:07:12 +0700
+Processing by LocationsController#index as HTML
+Geokit is using the domain: 
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT `locations`.* FROM `locations` [0m
+  Rendered locations/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`remember_token` IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 89ms (Views: 87.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.103 at 2013-08-25 22:07:12 +0700
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/custom.css?body=1" for 192.168.0.103 at 2013-08-25 22:07:12 +0700
+Served asset /custom.css - 304 Not Modified (24ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 192.168.0.103 at 2013-08-25 22:07:12 +0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 192.168.0.103 at 2013-08-25 22:07:12 +0700
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.0.103 at 2013-08-25 22:07:12 +0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 192.168.0.103 at 2013-08-25 22:07:12 +0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/staticpages.css?body=1" for 192.168.0.103 at 2013-08-25 22:07:12 +0700
+Served asset /staticpages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 192.168.0.103 at 2013-08-25 22:07:12 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:12 +0700
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:12 +0700
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:12 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:12 +0700
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:12 +0700
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:12 +0700
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:12 +0700
+Served asset /bootstrap-carousel.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:12 +0700
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:12 +0700
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:12 +0700
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:12 +0700
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:12 +0700
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:12 +0700
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:12 +0700
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:12 +0700
+Served asset /bootstrap-typeahead.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:12 +0700
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:12 +0700
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:12 +0700
+Served asset /sessions.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:12 +0700
+Served asset /static_pages.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/staticpages.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:12 +0700
+Served asset /staticpages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:12 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:12 +0700
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/locations" for 192.168.0.103 at 2013-08-25 22:07:24 +0700
+Processing by LocationsController#index as HTML
+Geokit is using the domain: 
+  [1m[36mLocation Load (0.3ms)[0m  [1mSELECT `locations`.* FROM `locations` [0m
+  Rendered locations/index.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`remember_token` IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 132ms (Views: 129.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/custom.css?body=1" for 192.168.0.103 at 2013-08-25 22:07:25 +0700
+Served asset /custom.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.0.103 at 2013-08-25 22:07:25 +0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 192.168.0.103 at 2013-08-25 22:07:25 +0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.103 at 2013-08-25 22:07:25 +0700
+Served asset /application.css - 304 Not Modified (39ms)
+
+
+Started GET "/assets/locations.css?body=1" for 192.168.0.103 at 2013-08-25 22:07:25 +0700
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 192.168.0.103 at 2013-08-25 22:07:25 +0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 192.168.0.103 at 2013-08-25 22:07:25 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/staticpages.css?body=1" for 192.168.0.103 at 2013-08-25 22:07:25 +0700
+Served asset /staticpages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:25 +0700
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:25 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:25 +0700
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:25 +0700
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:25 +0700
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:25 +0700
+Served asset /bootstrap-button.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:25 +0700
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:25 +0700
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:25 +0700
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:25 +0700
+Served asset /bootstrap-modal.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:25 +0700
+Served asset /bootstrap-tab.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:25 +0700
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:25 +0700
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:25 +0700
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:25 +0700
+Served asset /bootstrap-typeahead.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:25 +0700
+Served asset /bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:25 +0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:25 +0700
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:25 +0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/staticpages.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:25 +0700
+Served asset /staticpages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:25 +0700
+Served asset /users.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:25 +0700
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/locations" for 192.168.0.103 at 2013-08-25 22:07:40 +0700
+Processing by LocationsController#index as HTML
+Geokit is using the domain: 
+  [1m[36mLocation Load (0.3ms)[0m  [1mSELECT `locations`.* FROM `locations` [0m
+  Rendered locations/index.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`remember_token` IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 104ms (Views: 101.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/custom.css?body=1" for 192.168.0.103 at 2013-08-25 22:07:40 +0700
+Served asset /custom.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/locations.css?body=1" for 192.168.0.103 at 2013-08-25 22:07:40 +0700
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.103 at 2013-08-25 22:07:40 +0700
+Served asset /application.css - 304 Not Modified (25ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 192.168.0.103 at 2013-08-25 22:07:40 +0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 192.168.0.103 at 2013-08-25 22:07:40 +0700
+Served asset /static_pages.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.0.103 at 2013-08-25 22:07:41 +0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 192.168.0.103 at 2013-08-25 22:07:41 +0700
+Served asset /users.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/staticpages.css?body=1" for 192.168.0.103 at 2013-08-25 22:07:41 +0700
+Served asset /staticpages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:41 +0700
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:41 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:41 +0700
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:41 +0700
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:41 +0700
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:41 +0700
+Served asset /bootstrap-button.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:41 +0700
+Served asset /bootstrap-carousel.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:41 +0700
+Served asset /bootstrap-collapse.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:41 +0700
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:41 +0700
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:41 +0700
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:41 +0700
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:41 +0700
+Served asset /bootstrap-tooltip.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:41 +0700
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:41 +0700
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:41 +0700
+Served asset /bootstrap.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/locations.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:41 +0700
+Served asset /locations.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:41 +0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:41 +0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/staticpages.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:41 +0700
+Served asset /staticpages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:41 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:41 +0700
+Served asset /application.js - 304 Not Modified (23ms)
+
+
+Started GET "/locations" for 192.168.0.103 at 2013-08-25 22:07:50 +0700
+Processing by LocationsController#index as HTML
+Geokit is using the domain: 
+  [1m[36mLocation Load (0.3ms)[0m  [1mSELECT `locations`.* FROM `locations` [0m
+  Rendered locations/index.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`remember_token` IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (2.3ms)
+Completed 200 OK in 122ms (Views: 119.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.103 at 2013-08-25 22:07:50 +0700
+Served asset /application.css - 304 Not Modified (31ms)
+
+
+Started GET "/assets/locations.css?body=1" for 192.168.0.103 at 2013-08-25 22:07:50 +0700
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.0.103 at 2013-08-25 22:07:50 +0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 192.168.0.103 at 2013-08-25 22:07:50 +0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 192.168.0.103 at 2013-08-25 22:07:50 +0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 192.168.0.103 at 2013-08-25 22:07:50 +0700
+Served asset /custom.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/staticpages.css?body=1" for 192.168.0.103 at 2013-08-25 22:07:50 +0700
+Served asset /staticpages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 192.168.0.103 at 2013-08-25 22:07:50 +0700
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:50 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:50 +0700
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:50 +0700
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:50 +0700
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:50 +0700
+Served asset /bootstrap-alert.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:50 +0700
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:50 +0700
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:50 +0700
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:50 +0700
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:50 +0700
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:50 +0700
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:50 +0700
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:50 +0700
+Served asset /bootstrap-popover.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:50 +0700
+Served asset /bootstrap-tooltip.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:50 +0700
+Served asset /bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:50 +0700
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:50 +0700
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:50 +0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:50 +0700
+Served asset /static_pages.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/staticpages.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:50 +0700
+Served asset /staticpages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:50 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.103 at 2013-08-25 22:07:50 +0700
+Served asset /application.js - 304 Not Modified (23ms)
+
+
+Started GET "/locations/new" for 192.168.0.103 at 2013-08-25 22:10:31 +0700
+Processing by LocationsController#new as HTML
+Geokit is using the domain: 
+  Rendered locations/_form.html.erb (8.0ms)
+  Rendered locations/new.html.erb within layouts/application (12.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`remember_token` IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.5ms)
+Completed 200 OK in 127ms (Views: 125.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.103 at 2013-08-25 22:10:31 +0700
+Served asset /application.css - 304 Not Modified (45ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.0.103 at 2013-08-25 22:10:31 +0700
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 192.168.0.103 at 2013-08-25 22:10:31 +0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 192.168.0.103 at 2013-08-25 22:10:31 +0700
+Served asset /custom.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/locations.css?body=1" for 192.168.0.103 at 2013-08-25 22:10:31 +0700
+Served asset /locations.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 192.168.0.103 at 2013-08-25 22:10:31 +0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/staticpages.css?body=1" for 192.168.0.103 at 2013-08-25 22:10:31 +0700
+Served asset /staticpages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 192.168.0.103 at 2013-08-25 22:10:31 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.103 at 2013-08-25 22:10:31 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.103 at 2013-08-25 22:10:31 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 192.168.0.103 at 2013-08-25 22:10:31 +0700
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 192.168.0.103 at 2013-08-25 22:10:31 +0700
+Served asset /bootstrap-affix.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 192.168.0.103 at 2013-08-25 22:10:31 +0700
+Served asset /bootstrap-button.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 192.168.0.103 at 2013-08-25 22:10:31 +0700
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 192.168.0.103 at 2013-08-25 22:10:31 +0700
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 192.168.0.103 at 2013-08-25 22:10:31 +0700
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 192.168.0.103 at 2013-08-25 22:10:31 +0700
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 192.168.0.103 at 2013-08-25 22:10:31 +0700
+Served asset /bootstrap-modal.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 192.168.0.103 at 2013-08-25 22:10:31 +0700
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 192.168.0.103 at 2013-08-25 22:10:31 +0700
+Served asset /bootstrap-tab.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 192.168.0.103 at 2013-08-25 22:10:31 +0700
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 192.168.0.103 at 2013-08-25 22:10:31 +0700
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 192.168.0.103 at 2013-08-25 22:10:31 +0700
+Served asset /bootstrap-typeahead.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 192.168.0.103 at 2013-08-25 22:10:31 +0700
+Served asset /bootstrap.js - 304 Not Modified (26ms)
+
+
+Started GET "/assets/locations.js?body=1" for 192.168.0.103 at 2013-08-25 22:10:31 +0700
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 192.168.0.103 at 2013-08-25 22:10:31 +0700
+Served asset /sessions.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 192.168.0.103 at 2013-08-25 22:10:31 +0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 192.168.0.103 at 2013-08-25 22:10:31 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/staticpages.js?body=1" for 192.168.0.103 at 2013-08-25 22:10:31 +0700
+Served asset /staticpages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.103 at 2013-08-25 22:10:31 +0700
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started POST "/locations" for 192.168.0.103 at 2013-08-25 22:10:33 +0700
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cncWGD1+90PYJufTjWvskZsmM9NilD0HDCDKpql4oGw=", "location"=>{"address"=>"1655 Divisadero St San Francisco, CA 94115", "zip_code"=>""}, "commit"=>"Create Location"}
+Geokit is using the domain: 
+  [1m[35m (0.1ms)[0m  BEGIN
+Google geocoding. Address: 1655 Divisadero St San Francisco, CA 94115. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 1655 Divisadero St San Francisco, CA 94115
+Geocoder.us geocoding. Address: 1655 Divisadero St San Francisco, CA 94115. Result: 37.784844,-122.439766,1655 Divisadero St,San Francisco,CA,94115
+
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `locations` (`address`, `created_at`, `lat`, `lng`, `updated_at`, `zip_code`) VALUES ('1655 Divisadero St San Francisco, CA 94115', '2013-08-25 15:10:33', 37.784844, -122.439766, '2013-08-25 15:10:33', '94115')[0m
+  [1m[35m (100.0ms)[0m  COMMIT
+Redirected to http://192.168.0.103:3000/locations
+Completed 302 Found in 621ms (ActiveRecord: 100.4ms)
+
+
+Started GET "/locations" for 192.168.0.103 at 2013-08-25 22:10:34 +0700
+Processing by LocationsController#index as HTML
+Geokit is using the domain: 
+  [1m[36mLocation Load (0.4ms)[0m  [1mSELECT `locations`.* FROM `locations` [0m
+  Rendered locations/index.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`remember_token` IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (2.2ms)
+Completed 200 OK in 133ms (Views: 129.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/custom.css?body=1" for 192.168.0.103 at 2013-08-25 22:10:34 +0700
+Served asset /custom.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/locations.css?body=1" for 192.168.0.103 at 2013-08-25 22:10:34 +0700
+Served asset /locations.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.0.103 at 2013-08-25 22:10:34 +0700
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.103 at 2013-08-25 22:10:34 +0700
+Served asset /application.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 192.168.0.103 at 2013-08-25 22:10:34 +0700
+Served asset /static_pages.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 192.168.0.103 at 2013-08-25 22:10:34 +0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/staticpages.css?body=1" for 192.168.0.103 at 2013-08-25 22:10:34 +0700
+Served asset /staticpages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 192.168.0.103 at 2013-08-25 22:10:34 +0700
+Served asset /users.css - 304 Not Modified (28ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.103 at 2013-08-25 22:10:34 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.103 at 2013-08-25 22:10:34 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 192.168.0.103 at 2013-08-25 22:10:34 +0700
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 192.168.0.103 at 2013-08-25 22:10:34 +0700
+Served asset /bootstrap-affix.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 192.168.0.103 at 2013-08-25 22:10:34 +0700
+Served asset /bootstrap-alert.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 192.168.0.103 at 2013-08-25 22:10:34 +0700
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 192.168.0.103 at 2013-08-25 22:10:34 +0700
+Served asset /bootstrap-carousel.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 192.168.0.103 at 2013-08-25 22:10:34 +0700
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 192.168.0.103 at 2013-08-25 22:10:34 +0700
+Served asset /bootstrap-collapse.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 192.168.0.103 at 2013-08-25 22:10:34 +0700
+Served asset /bootstrap-modal.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 192.168.0.103 at 2013-08-25 22:10:34 +0700
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 192.168.0.103 at 2013-08-25 22:10:34 +0700
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 192.168.0.103 at 2013-08-25 22:10:34 +0700
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 192.168.0.103 at 2013-08-25 22:10:34 +0700
+Served asset /bootstrap-popover.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 192.168.0.103 at 2013-08-25 22:10:34 +0700
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 192.168.0.103 at 2013-08-25 22:10:34 +0700
+Served asset /bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/locations.js?body=1" for 192.168.0.103 at 2013-08-25 22:10:34 +0700
+Served asset /locations.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 192.168.0.103 at 2013-08-25 22:10:34 +0700
+Served asset /sessions.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 192.168.0.103 at 2013-08-25 22:10:34 +0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/staticpages.js?body=1" for 192.168.0.103 at 2013-08-25 22:10:34 +0700
+Served asset /staticpages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 192.168.0.103 at 2013-08-25 22:10:34 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.103 at 2013-08-25 22:10:34 +0700
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/find_by_zipcode?zip=94105&distance=5" for 192.168.0.103 at 2013-08-25 22:10:41 +0700
+Processing by LocationsController#find_by_zipcode as */*
+  Parameters: {"zip"=>"94105", "distance"=>"5"}
+Geokit is using the domain: 
+Google geocoding. Address: 94105. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 94105
+Geocoder.us geocoding. Address: 94105. Result: 37.789228, -122.3957, San Francisco, CA, 94105
+  [1m[36mLocation Load (0.4ms)[0m  [1mSELECT `locations`.*, 
+ (ACOS(least(1,COS(0.6595464503868318)*COS(-2.1362079552832234)*COS(RADIANS(locations.lat))*COS(RADIANS(locations.lng))+
+ COS(0.6595464503868318)*SIN(-2.1362079552832234)*COS(RADIANS(locations.lat))*SIN(RADIANS(locations.lng))+
+ SIN(0.6595464503868318)*SIN(RADIANS(locations.lat))))*3963.19)
+ AS distance FROM `locations` WHERE ((locations.lat>37.716943073573205 AND locations.lat<37.861512926426805 AND locations.lng>-122.48716858973533 AND locations.lng<-122.30423141026465)) AND ((
+ (ACOS(least(1,COS(0.6595464503868318)*COS(-2.1362079552832234)*COS(RADIANS(locations.lat))*COS(RADIANS(locations.lng))+
+ COS(0.6595464503868318)*SIN(-2.1362079552832234)*COS(RADIANS(locations.lat))*SIN(RADIANS(locations.lng))+
+ SIN(0.6595464503868318)*SIN(RADIANS(locations.lat))))*3963.19)
+ <= 5))[0m
+  Rendered locations/_search_result.html.erb (3.9ms)
+  Rendered locations/find_by_zipcode.js.erb (6.6ms)
+Completed 200 OK in 584ms (Views: 14.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/locations" for 192.168.0.103 at 2013-08-25 22:11:19 +0700
+Processing by LocationsController#index as HTML
+Geokit is using the domain: 
+  [1m[35mLocation Load (0.3ms)[0m  SELECT `locations`.* FROM `locations` 
+  Rendered locations/index.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`remember_token` IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (14.9ms)
+Completed 200 OK in 151ms (Views: 114.0ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/custom.css?body=1" for 192.168.0.103 at 2013-08-25 22:11:19 +0700
+Served asset /custom.css - 304 Not Modified (27ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.103 at 2013-08-25 22:11:19 +0700
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 192.168.0.103 at 2013-08-25 22:11:19 +0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 192.168.0.103 at 2013-08-25 22:11:19 +0700
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.0.103 at 2013-08-25 22:11:19 +0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 192.168.0.103 at 2013-08-25 22:11:19 +0700
+Served asset /static_pages.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/staticpages.css?body=1" for 192.168.0.103 at 2013-08-25 22:11:19 +0700
+Served asset /staticpages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 192.168.0.103 at 2013-08-25 22:11:19 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:19 +0700
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:19 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:19 +0700
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:19 +0700
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:19 +0700
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:19 +0700
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:19 +0700
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:19 +0700
+Served asset /bootstrap-collapse.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:19 +0700
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:19 +0700
+Served asset /bootstrap-dropdown.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:19 +0700
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:19 +0700
+Served asset /bootstrap-tab.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:19 +0700
+Served asset /bootstrap-tooltip.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:19 +0700
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:19 +0700
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:19 +0700
+Served asset /bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/locations.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:19 +0700
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:19 +0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:19 +0700
+Served asset /static_pages.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/staticpages.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:19 +0700
+Served asset /staticpages.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/users.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:19 +0700
+Served asset /users.js - 304 Not Modified (25ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:19 +0700
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/locations" for 192.168.0.103 at 2013-08-25 22:11:49 +0700
+Processing by LocationsController#index as HTML
+Geokit is using the domain: 
+  [1m[35mLocation Load (0.3ms)[0m  SELECT `locations`.* FROM `locations` 
+  Rendered locations/index.html.erb within layouts/application (6.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`remember_token` IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.3ms)
+Completed 200 OK in 119ms (Views: 116.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.103 at 2013-08-25 22:11:49 +0700
+Served asset /application.css - 304 Not Modified (31ms)
+
+
+Started GET "/assets/custom.css?body=1" for 192.168.0.103 at 2013-08-25 22:11:49 +0700
+Served asset /custom.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/locations.css?body=1" for 192.168.0.103 at 2013-08-25 22:11:49 +0700
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 192.168.0.103 at 2013-08-25 22:11:49 +0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.0.103 at 2013-08-25 22:11:49 +0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 192.168.0.103 at 2013-08-25 22:11:49 +0700
+Served asset /sessions.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 192.168.0.103 at 2013-08-25 22:11:49 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/staticpages.css?body=1" for 192.168.0.103 at 2013-08-25 22:11:49 +0700
+Served asset /staticpages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:49 +0700
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:49 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:49 +0700
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:49 +0700
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:49 +0700
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:49 +0700
+Served asset /bootstrap-button.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:49 +0700
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:49 +0700
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:49 +0700
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:49 +0700
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:49 +0700
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:49 +0700
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:49 +0700
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:49 +0700
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:49 +0700
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:49 +0700
+Served asset /bootstrap.js - 304 Not Modified (32ms)
+
+
+Started GET "/assets/locations.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:49 +0700
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:49 +0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:49 +0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/staticpages.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:49 +0700
+Served asset /staticpages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:49 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:49 +0700
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/locations" for 192.168.0.103 at 2013-08-25 22:11:58 +0700
+Processing by LocationsController#index as HTML
+Geokit is using the domain: 
+  [1m[35mLocation Load (0.2ms)[0m  SELECT `locations`.* FROM `locations` 
+  Rendered locations/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`remember_token` IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (1.8ms)
+Completed 200 OK in 133ms (Views: 131.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/custom.css?body=1" for 192.168.0.103 at 2013-08-25 22:11:58 +0700
+Served asset /custom.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.103 at 2013-08-25 22:11:58 +0700
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/locations.css?body=1" for 192.168.0.103 at 2013-08-25 22:11:59 +0700
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 192.168.0.103 at 2013-08-25 22:11:59 +0700
+Served asset /sessions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 192.168.0.103 at 2013-08-25 22:11:59 +0700
+Served asset /static_pages.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.0.103 at 2013-08-25 22:11:59 +0700
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/staticpages.css?body=1" for 192.168.0.103 at 2013-08-25 22:11:59 +0700
+Served asset /staticpages.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/users.css?body=1" for 192.168.0.103 at 2013-08-25 22:11:59 +0700
+Served asset /users.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:59 +0700
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:59 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:59 +0700
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:59 +0700
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:59 +0700
+Served asset /bootstrap-alert.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:59 +0700
+Served asset /bootstrap-button.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:59 +0700
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:59 +0700
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:59 +0700
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:59 +0700
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:59 +0700
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:59 +0700
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:59 +0700
+Served asset /bootstrap-tooltip.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:59 +0700
+Served asset /bootstrap-popover.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:59 +0700
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:59 +0700
+Served asset /bootstrap.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/locations.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:59 +0700
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:59 +0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:59 +0700
+Served asset /static_pages.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/staticpages.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:59 +0700
+Served asset /staticpages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:59 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.103 at 2013-08-25 22:11:59 +0700
+Served asset /application.js - 304 Not Modified (7ms)
